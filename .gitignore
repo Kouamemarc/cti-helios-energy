@@ -1,0 +1,4 @@
+artefacts/binaires/*
+!artefacts/binaires/hashes.txt
+*.zip
+.env
