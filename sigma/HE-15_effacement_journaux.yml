@@ -1,0 +1,28 @@
+title: Effacement des journaux d'événements Windows
+id: 11fda0cd-66a6-5740-8591-d135553f0b4e
+status: experimental
+description: Détecte l'effacement des journaux par wevtutil ou PowerShell. Observé le 07/03 sur comptabilite-07 (alerte 12). Compléter par l'événement natif 1102 du journal Security.
+references:
+  - INC-2026-0302 (dossier SOC Helios Energy, TLP:AMBER)
+author: Cellule CTI - Challenge Helios Energy
+date: 2026-10-07
+tags:
+  - attack.defense-evasion
+  - attack.t1070.001
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection_wevtutil:
+    Image|endswith: '\wevtutil.exe'
+    CommandLine|contains:
+      - ' cl '
+      - ' clear-log '
+  selection_ps:
+    CommandLine|contains:
+      - 'Clear-EventLog'
+      - 'Remove-EventLog'
+  condition: 1 of selection_*
+falsepositives:
+  - Rares ; maintenance planifiée documentée
+level: high

@@ -1,0 +1,25 @@
+title: Téléchargement d'un exécutable par PowerShell via le proxy
+id: aa130e98-0332-58ff-9ee2-b7f7f5b7a72b
+status: experimental
+description: Détecte le téléchargement d'un exécutable ou d'une DLL avec un User-Agent PowerShell. Correspond à la récupération de BIN-02 le 02/03 (alerte 2, journal Squid).
+references:
+  - INC-2026-0302 (dossier SOC Helios Energy, TLP:AMBER)
+author: Cellule CTI - Challenge Helios Energy
+date: 2026-10-07
+tags:
+  - attack.command-and-control
+  - attack.t1105
+logsource:
+  category: proxy
+detection:
+  selection_ext:
+    c-uri-extension:
+      - 'exe'
+      - 'dll'
+      - 'scr'
+  selection_ua:
+    c-useragent|contains: 'WindowsPowerShell'
+  condition: all of selection_*
+falsepositives:
+  - Scripts de déploiement internes téléchargeant des installateurs (exclure les dépôts internes)
+level: medium

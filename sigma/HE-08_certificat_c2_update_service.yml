@@ -1,0 +1,27 @@
+title: Session TLS présentant le certificat auto-signé des serveurs C2
+id: a248c864-cb0a-5d68-a651-db0d02ac7261
+status: experimental
+description: Détecte le certificat auto-signé CN=update-service partagé par les serveurs de commande (IoC 33). Plus durable qu'une règle sur les domaines, car l'attaquant réutilise ce certificat d'un serveur à l'autre.
+references:
+  - INC-2026-0302 (dossier SOC Helios Energy, TLP:AMBER)
+author: Cellule CTI - Challenge Helios Energy
+date: 2026-10-07
+tags:
+  - attack.command-and-control
+  - attack.resource-development
+  - attack.t1071.001
+  - attack.t1587.003
+logsource:
+  product: zeek
+  service: x509
+detection:
+  selection_subject:
+    certificate.subject|contains: 'CN=update-service'
+  selection_fp:
+    fingerprint:
+      - 'bda5d6c36e3ff362f9ce0957370a429fff58eb37'
+      - 'BDA5D6C36E3FF362F9CE0957370A429FFF58EB37'
+  condition: 1 of selection_*
+falsepositives:
+  - Appareil interne utilisant un certificat auto-signé au nom générique identique (à vérifier une fois)
+level: high

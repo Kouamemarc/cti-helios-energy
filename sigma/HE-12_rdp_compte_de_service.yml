@@ -1,0 +1,27 @@
+title: Ouverture de session RDP avec un compte de service
+id: 77c8f3d5-7136-5c53-843a-ddfe69be099f
+status: experimental
+description: Un compte de service ne devrait jamais ouvrir de session RDP interactive. Observé le 04/03 à 01:47 sur srv-fichiers-02 avec svc-backup-temp (alerte 7, événement 4624 type 10). Le filtrage horaire (hors heures ouvrées) est à ajouter dans le SIEM, Sigma ne gérant pas l'heure.
+references:
+  - INC-2026-0302 (dossier SOC Helios Energy, TLP:AMBER)
+author: Cellule CTI - Challenge Helios Energy
+date: 2026-10-07
+tags:
+  - attack.lateral-movement
+  - attack.persistence
+  - attack.t1021.001
+  - attack.t1078.002
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 4624
+    LogonType: 10
+    TargetUserName|startswith:
+      - 'svc-'
+      - 'svc_'
+  condition: selection
+falsepositives:
+  - Administrateurs utilisant à tort un compte de service pour se connecter (pratique à proscrire)
+level: high

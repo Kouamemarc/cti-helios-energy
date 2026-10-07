@@ -1,0 +1,29 @@
+title: Contact d'un domaine de l'infrastructure de l'attaquant
+id: 2758dda0-15c9-5d91-9e5d-a08e2c00a677
+status: experimental
+description: Détecte toute requête vers les domaines observés pendant l'incident (livraison, C2, repli, hameçonnage, usurpation). Règle à base d'indicateurs, à durée de vie courte, à réviser à chaque mise à jour du renseignement.
+references:
+  - INC-2026-0302 (dossier SOC Helios Energy, TLP:AMBER)
+author: Cellule CTI - Challenge Helios Energy
+date: 2026-10-07
+tags:
+  - attack.command-and-control
+  - attack.initial-access
+  - attack.t1071.001
+  - attack.t1008
+  - attack.t1566
+logsource:
+  category: proxy
+detection:
+  selection:
+    cs-host|endswith:
+      - 'cdn-svc-update.test'
+      - 'api-telemetry-eu.test'
+      - 'static-assets-cache.test'
+      - 'mail-secure-login.test'
+      - 'helios-energy-portal.test'
+      - 'update-win-msft.test'
+  condition: selection
+falsepositives:
+  - Aucun attendu
+level: high

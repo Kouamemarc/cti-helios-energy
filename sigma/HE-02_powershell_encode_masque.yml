@@ -1,0 +1,41 @@
+title: PowerShell avec commande encodée et fenêtre masquée
+id: 36a09d80-5711-5040-8139-1e61c1f1c026
+status: experimental
+description: Détecte PowerShell lancé avec une commande encodée en base64 et une fenêtre masquée, ou contenant l'encodage UTF-16 de IEX (SQBFAFgA). Observé le 02/03 sur comptabilite-07 (alerte 1, journal Sysmon).
+references:
+  - INC-2026-0302 (dossier SOC Helios Energy, TLP:AMBER)
+author: Cellule CTI - Challenge Helios Energy
+date: 2026-10-07
+tags:
+  - attack.execution
+  - attack.defense-evasion
+  - attack.t1059.001
+  - attack.t1027
+  - attack.t1564.003
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection_img:
+    Image|endswith:
+      - '\powershell.exe'
+      - '\pwsh.exe'
+  selection_enc:
+    CommandLine|contains:
+      - ' -enc '
+      - ' -en '
+      - ' -e '
+      - ' -EncodedCommand '
+  selection_hidden:
+    CommandLine|contains:
+      - '-w hidden'
+      - '-WindowStyle hidden'
+      - '-win hidden'
+  selection_iex:
+    CommandLine|contains:
+      - 'SQBFAFgA'
+      - 'aQBlAHgA'
+  condition: selection_img and ((selection_enc and selection_hidden) or selection_iex)
+falsepositives:
+  - Scripts d'administration encodés (outils de gestion de parc) - exclure par compte de service ou parent connu
+level: high

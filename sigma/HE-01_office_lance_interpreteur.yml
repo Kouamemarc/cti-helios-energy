@@ -1,0 +1,33 @@
+title: Application Office lançant un interpréteur de commandes
+id: a3e3a523-233b-5eeb-a50e-ba82b1938d35
+status: experimental
+description: Détecte Word, Excel ou PowerPoint engendrant PowerShell ou un autre interpréteur. Observé le 02/03 sur comptabilite-07 (alerte 1). Le parent observé est winword.exe alors que BIN-01 est un .xlsm, d'où l'inclusion d'excel.exe.
+references:
+  - INC-2026-0302 (dossier SOC Helios Energy, TLP:AMBER)
+author: Cellule CTI - Challenge Helios Energy
+date: 2026-10-07
+tags:
+  - attack.execution
+  - attack.t1204.002
+  - attack.t1059.001
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection_parent:
+    ParentImage|endswith:
+      - '\WINWORD.EXE'
+      - '\EXCEL.EXE'
+      - '\POWERPNT.EXE'
+  selection_child:
+    Image|endswith:
+      - '\powershell.exe'
+      - '\pwsh.exe'
+      - '\cmd.exe'
+      - '\wscript.exe'
+      - '\cscript.exe'
+      - '\mshta.exe'
+  condition: all of selection_*
+falsepositives:
+  - Macros métier légitimes appelant un script (à recenser et exclure par chemin de document)
+level: high

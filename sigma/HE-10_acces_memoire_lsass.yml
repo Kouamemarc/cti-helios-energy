@@ -1,0 +1,37 @@
+title: Accès en lecture à la mémoire de LSASS
+id: 4fc413c2-bb2d-58c2-99c0-d8e077433703
+status: experimental
+description: Détecte l'ouverture de lsass.exe avec des droits de lecture mémoire par un processus non légitime, notamment via rundll32. Observé le 05/03 sur dc-01 (alerte 5, GrantedAccess 0x1010 par rundll32_helper.dll).
+references:
+  - INC-2026-0302 (dossier SOC Helios Energy, TLP:AMBER)
+author: Cellule CTI - Challenge Helios Energy
+date: 2026-10-07
+tags:
+  - attack.credential-access
+  - attack.t1003.001
+logsource:
+  category: process_access
+  product: windows
+detection:
+  selection_target:
+    TargetImage|endswith: '\lsass.exe'
+  selection_access:
+    GrantedAccess:
+      - '0x1010'
+      - '0x1410'
+      - '0x1438'
+      - '0x143a'
+      - '0x1fffff'
+  selection_rundll:
+    SourceImage|endswith: '\rundll32.exe'
+  selection_ioc:
+    CallTrace|contains: 'rundll32_helper'
+  filter_legit:
+    SourceImage|startswith:
+      - 'C:\Program Files\'
+      - 'C:\ProgramData\Microsoft\Windows Defender\'
+      - 'C:\Windows\System32\wbem\'
+  condition: selection_target and (selection_access or selection_rundll or selection_ioc) and not filter_legit
+falsepositives:
+  - Solutions de sécurité ou de supervision installées hors des chemins exclus
+level: high

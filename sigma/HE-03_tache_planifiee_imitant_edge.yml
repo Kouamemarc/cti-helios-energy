@@ -1,0 +1,28 @@
+title: Tâche planifiée imitant la mise à jour de Microsoft Edge
+id: 8238cadd-6a57-5698-9803-5bd971165cb7
+status: experimental
+description: Détecte la création par schtasks.exe d'une tâche nommée comme celle de mise à jour d'Edge sans être lancée par l'installateur Edge. Les tâches légitimes portent les suffixes Core ou UA. Observé le 02/03 sur comptabilite-07 (alerte 3).
+references:
+  - INC-2026-0302 (dossier SOC Helios Energy, TLP:AMBER)
+author: Cellule CTI - Challenge Helios Energy
+date: 2026-10-07
+tags:
+  - attack.persistence
+  - attack.defense-evasion
+  - attack.t1053.005
+  - attack.t1036.004
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    Image|endswith: '\schtasks.exe'
+    CommandLine|contains|all:
+      - '/create'
+      - 'MicrosoftEdgeUpdateTaskMachine'
+  filter_legit_parent:
+    ParentImage|contains: '\Microsoft\EdgeUpdate\'
+  condition: selection and not filter_legit_parent
+falsepositives:
+  - Réinstallation manuelle d'Edge par un administrateur
+level: high

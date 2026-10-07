@@ -1,0 +1,43 @@
+title: Connexion sortante vers SMB ou RDP
+name: he13_connexion_smb_rdp
+id: 440c3079-805a-5aed-ba77-41266d8e2eec
+status: experimental
+description: Règle de base - connexion initiée vers 445 ou 3389.
+author: Cellule CTI - Challenge Helios Energy
+date: 2026-10-07
+logsource:
+  category: network_connection
+  product: windows
+detection:
+  selection:
+    Initiated: 'true'
+    DestinationPort:
+      - 445
+      - 3389
+  condition: selection
+level: informational
+---
+title: Balayage interne des ports SMB et RDP depuis un poste
+id: b449e84b-fe47-5942-9d7d-faae0192e362
+status: experimental
+description: Corrèle plus de 20 destinations distinctes sur 445 ou 3389 en 5 minutes depuis une même source. Observé le 03/03 depuis comptabilite-07 vers 10.20.0.0/16 (alerte 6).
+references:
+  - INC-2026-0302 (dossier SOC Helios Energy, TLP:AMBER)
+author: Cellule CTI - Challenge Helios Energy
+date: 2026-10-07
+tags:
+  - attack.discovery
+  - attack.t1046
+correlation:
+  type: value_count
+  rules:
+    - he13_connexion_smb_rdp
+  group-by:
+    - SourceIp
+  timespan: 5m
+  condition:
+    field: DestinationIp
+    gte: 20
+falsepositives:
+  - Scanners de vulnérabilités et serveurs d'administration (exclure leurs adresses)
+level: medium

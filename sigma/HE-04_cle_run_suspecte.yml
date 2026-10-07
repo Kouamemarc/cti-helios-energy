@@ -1,0 +1,29 @@
+title: Persistance par clé Run suspecte
+id: 76a9ad08-a1e6-5730-a8ca-7c958c64e7ec
+status: experimental
+description: Détecte l'écriture d'une valeur sous une clé Run portant le nom observé (WinTelemetry) ou pointant vers un répertoire temporaire ou utilisateur. Cette persistance (IoC 38) n'a déclenché aucune alerte pendant l'incident.
+references:
+  - INC-2026-0302 (dossier SOC Helios Energy, TLP:AMBER)
+author: Cellule CTI - Challenge Helios Energy
+date: 2026-10-07
+tags:
+  - attack.persistence
+  - attack.t1547.001
+logsource:
+  category: registry_set
+  product: windows
+detection:
+  selection_key:
+    TargetObject|contains: '\Software\Microsoft\Windows\CurrentVersion\Run\'
+  selection_name:
+    TargetObject|endswith: '\WinTelemetry'
+  selection_path:
+    Details|contains:
+      - '\AppData\Local\Temp\'
+      - '\Windows\Temp\'
+      - '\Users\Public\'
+      - 'powershell'
+  condition: selection_key and (selection_name or selection_path)
+falsepositives:
+  - Logiciels s'installant dans le profil utilisateur (messageries, outils de visioconférence)
+level: high

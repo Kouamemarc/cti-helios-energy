@@ -1,0 +1,28 @@
+title: Création d'un thread distant dans explorer.exe
+id: 21ea9d97-2559-58a1-b29b-bf8e8701e12c
+status: experimental
+description: Détecte un processus non système créant un thread dans explorer.exe. Observé le 04/03 sur srv-fichiers-02 (alerte 8, Sysmon CreateRemoteThread, région RWX).
+references:
+  - INC-2026-0302 (dossier SOC Helios Energy, TLP:AMBER)
+author: Cellule CTI - Challenge Helios Energy
+date: 2026-10-07
+tags:
+  - attack.defense-evasion
+  - attack.privilege-escalation
+  - attack.t1055
+logsource:
+  category: create_remote_thread
+  product: windows
+detection:
+  selection:
+    TargetImage|endswith: '\explorer.exe'
+  filter_system:
+    SourceImage|startswith:
+      - 'C:\Windows\System32\'
+      - 'C:\Windows\SysWOW64\'
+      - 'C:\Program Files\'
+      - 'C:\Program Files (x86)\'
+  condition: selection and not filter_system
+falsepositives:
+  - Outils d'accessibilité, de capture d'écran ou de sécurité installés hors Program Files
+level: medium

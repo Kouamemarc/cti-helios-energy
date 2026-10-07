@@ -1,0 +1,28 @@
+title: Exécutable imitant svchost hors des répertoires système
+id: f6542039-f15d-500f-8ee2-765e74ed1996
+status: experimental
+description: Détecte svchost.exe exécuté hors de System32 ou SysWOW64, et le nom observé svchost_update.exe (BIN-02, alerte 2).
+references:
+  - INC-2026-0302 (dossier SOC Helios Energy, TLP:AMBER)
+author: Cellule CTI - Challenge Helios Energy
+date: 2026-10-07
+tags:
+  - attack.defense-evasion
+  - attack.t1036.005
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection_ioc:
+    Image|endswith: '\svchost_update.exe'
+  selection_name:
+    Image|endswith: '\svchost.exe'
+  filter_system:
+    Image|startswith:
+      - 'C:\Windows\System32\'
+      - 'C:\Windows\SysWOW64\'
+      - 'C:\Windows\WinSxS\'
+  condition: selection_ioc or (selection_name and not filter_system)
+falsepositives:
+  - Très peu probables
+level: high

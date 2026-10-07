@@ -1,0 +1,56 @@
+title: Création d'un compte de domaine
+name: he11_compte_cree
+id: 3e046338-3f24-539e-9b79-aaed75a7ccbb
+status: experimental
+description: Règle de base - création de compte (4720).
+author: Cellule CTI - Challenge Helios Energy
+date: 2026-10-07
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 4720
+  condition: selection
+level: low
+---
+title: Suppression d'un compte de domaine
+name: he11_compte_supprime
+id: a598c3af-ae3d-54e0-bbf0-13aa14446120
+status: experimental
+description: Règle de base - suppression de compte (4726).
+author: Cellule CTI - Challenge Helios Energy
+date: 2026-10-07
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 4726
+  condition: selection
+level: low
+---
+title: Compte de domaine créé puis supprimé en moins d'une heure
+id: 387ea9e1-895f-5be2-839f-aece8ef266fb
+status: experimental
+description: Corrèle la création puis la suppression d'un même compte en moins d'une heure. Observé le 05/03 sur dc-01 avec svc-backup-temp, créé à 14:10 et supprimé à 14:55 (alerte 9).
+references:
+  - INC-2026-0302 (dossier SOC Helios Energy, TLP:AMBER)
+author: Cellule CTI - Challenge Helios Energy
+date: 2026-10-07
+tags:
+  - attack.persistence
+  - attack.defense-evasion
+  - attack.t1136.002
+  - attack.t1070
+correlation:
+  type: temporal_ordered
+  rules:
+    - he11_compte_cree
+    - he11_compte_supprime
+  group-by:
+    - TargetUserName
+  timespan: 1h
+falsepositives:
+  - Comptes de test créés et supprimés par l'équipe d'administration (à formaliser par ticket)
+level: high

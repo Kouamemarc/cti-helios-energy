@@ -1,0 +1,26 @@
+title: Transfert sortant volumineux vers une adresse externe sur le port 8080
+id: b7e48916-e554-5c7c-9020-ea378ac7e09f
+status: experimental
+description: Détecte un envoi de plus de 100 Mo vers une adresse externe sur un port HTTP alternatif. Observé le 05/03 depuis dc-01 vers 203.0.113.28:8080 (2 469 135 790 octets, alerte 10).
+references:
+  - INC-2026-0302 (dossier SOC Helios Energy, TLP:AMBER)
+author: Cellule CTI - Challenge Helios Energy
+date: 2026-10-07
+tags:
+  - attack.exfiltration
+  - attack.t1048.003
+logsource:
+  product: zeek
+  service: conn
+detection:
+  selection:
+    id.resp_p:
+      - 8080
+      - 8000
+      - 8888
+    local_resp: 'false'
+    orig_bytes|gt: 104857600
+  condition: selection
+falsepositives:
+  - Sauvegardes externalisées ou synchronisations vers un prestataire (déclarer leurs destinations)
+level: high
