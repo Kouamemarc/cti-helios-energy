@@ -1,0 +1,32 @@
+title: Résolution DNS d'un domaine de la campagne INC-2026-0302
+id: c6e2fb42-43e7-4de9-99c2-f99543a13499
+status: experimental
+description: |
+    Détecte la résolution d'un domaine de livraison, de commande, de repli ou d'hameçonnage observé pendant l'incident.
+    Couvre la balise de BIN-02 (api-telemetry-eu.test) et la bascule sur le canal de repli (static-assets-cache.test).
+    Version interne : le domaine helios-energy-portal.test identifie la victime et doit être retiré avant tout partage.
+references:
+    - Dossier d'artefacts SOC Helios Energy, INC-2026-0302 - alertes SIEM 4 et 11, indicateurs n°13 à 17
+author: Cellule CTI - projet Helios Energy
+date: 2026-10-09
+tags:
+    - attack.command-and-control
+    - attack.t1071.001
+    - attack.t1008
+    - attack.initial-access
+    - attack.t1566
+    - tlp.amber
+logsource:
+    category: dns
+detection:
+    selection:
+        query|endswith:
+            - 'cdn-svc-update.test'
+            - 'api-telemetry-eu.test'
+            - 'static-assets-cache.test'
+            - 'mail-secure-login.test'
+            - 'helios-energy-portal.test'
+    condition: selection
+falsepositives:
+    - Analystes consultant ces domaines depuis un poste d'investigation (à exclure par adresse source)
+level: high

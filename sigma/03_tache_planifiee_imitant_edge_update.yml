@@ -1,0 +1,33 @@
+title: Tâche planifiée imitant Microsoft Edge Update créée par schtasks
+id: 7806cef8-319d-42ac-8577-05508e64cf5f
+status: experimental
+description: |
+    Détecte la création par schtasks.exe d'une tâche dont le nom imite celles de Microsoft Edge Update.
+    Persistance de BIN-02 : schtasks /create /tn MicrosoftEdgeUpdateTaskMachine.
+    Les tâches légitimes (MicrosoftEdgeUpdateTaskMachineCore et ...UA) sont créées par l'installeur d'Edge, pas par schtasks.exe.
+references:
+    - Dossier d'artefacts SOC Helios Energy, INC-2026-0302 - alerte SIEM 3, indicateur n°36, fiche BIN-02
+author: Cellule CTI - projet Helios Energy
+date: 2026-10-09
+tags:
+    - attack.persistence
+    - attack.t1053.005
+    - attack.stealth
+    - attack.t1036.004
+    - tlp.amber
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_img:
+        Image|endswith: '\schtasks.exe'
+    selection_cli:
+        CommandLine|contains|all:
+            - '/create'
+            - 'MicrosoftEdgeUpdateTask'
+    filter_edge_installer:
+        ParentImage|contains: '\Microsoft\EdgeUpdate\'
+    condition: selection_img and selection_cli and not filter_edge_installer
+falsepositives:
+    - Scripts de déploiement internes qui recréent les tâches Edge (à exclure par compte de service)
+level: high

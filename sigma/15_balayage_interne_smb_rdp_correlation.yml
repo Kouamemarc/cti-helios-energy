@@ -1,0 +1,54 @@
+title: Connexion interne vers les ports SMB ou RDP
+id: 92dc0822-e703-4125-8ab6-bd47e0d80ed0
+name: connexion_interne_smb_rdp
+status: experimental
+description: Règle de base pour la corrélation. Connexion vers les ports 445 ou 3389.
+references:
+    - Dossier d'artefacts SOC Helios Energy, INC-2026-0302 - alerte SIEM 6
+author: Cellule CTI - projet Helios Energy
+date: 2026-10-09
+tags:
+    - attack.discovery
+    - attack.t1046
+    - tlp.amber
+logsource:
+    category: firewall
+detection:
+    selection:
+        dst_port:
+            - 445
+            - 3389
+    condition: selection
+falsepositives:
+    - Trafic légitime vers les serveurs de fichiers et les serveurs d'administration
+level: informational
+---
+title: Balayage interne des ports SMB et RDP depuis une même source
+id: eb967a35-862f-438c-a940-b230b956318e
+status: experimental
+description: |
+    Détecte une même adresse source qui contacte plus de 30 destinations distinctes sur les ports 445 ou 3389
+    en cinq minutes. Alerte 6 : balayage du sous-réseau 10.20.0.0/16 depuis le poste compromis.
+    Le seuil de 30 est un point de départ, à ajuster selon le bruit de fond du réseau.
+references:
+    - Dossier d'artefacts SOC Helios Energy, INC-2026-0302 - alerte SIEM 6, indicateur n°25
+author: Cellule CTI - projet Helios Energy
+date: 2026-10-09
+tags:
+    - attack.discovery
+    - attack.t1046
+    - tlp.amber
+correlation:
+    type: value_count
+    rules:
+        - connexion_interne_smb_rdp
+    group-by:
+        - src_ip
+    timespan: 5m
+    condition:
+        field: dst_ip
+        gte: 30
+falsepositives:
+    - Scanners de vulnérabilités et outils d'inventaire (à exclure par adresse source)
+    - Serveurs de sauvegarde ou de supervision
+level: medium

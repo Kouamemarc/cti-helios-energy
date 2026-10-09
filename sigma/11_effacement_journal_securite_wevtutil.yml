@@ -1,0 +1,30 @@
+title: Effacement d'un journal d'événements Windows avec wevtutil
+id: 54402d91-3af1-4276-ab65-60713dd1276d
+status: experimental
+description: |
+    Détecte l'effacement d'un journal d'événements par wevtutil.exe.
+    Alerte 12 : wevtutil cl Security sur comptabilite-07 le 7 mars, cinq jours après la détection initiale.
+    L'alerte cite T1070.001 ; depuis ATT&CK v19 la technique porte l'identifiant T1685.005 (tactique Defense Impairment).
+references:
+    - Dossier d'artefacts SOC Helios Energy, INC-2026-0302 - alerte SIEM 12
+author: Cellule CTI - projet Helios Energy
+date: 2026-10-09
+tags:
+    - attack.defense-impairment
+    - attack.t1685.005
+    - tlp.amber
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_img:
+        - Image|endswith: '\wevtutil.exe'
+        - OriginalFileName: 'wevtutil.exe'
+    selection_cli:
+        CommandLine|contains:
+            - ' cl '
+            - ' clear-log '
+    condition: selection_img and selection_cli
+falsepositives:
+    - Scripts de maintenance qui purgent des journaux applicatifs (ne devraient jamais viser Security)
+level: high

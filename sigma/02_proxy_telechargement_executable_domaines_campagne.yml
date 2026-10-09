@@ -1,0 +1,31 @@
+title: Téléchargement d'un exécutable depuis un domaine de la campagne INC-2026-0302
+id: 213b1204-7f38-4427-86cb-3d0c7460dd0a
+status: experimental
+description: |
+    Détecte, dans les journaux du proxy, le téléchargement d'un exécutable ou d'une bibliothèque depuis un domaine
+    de livraison ou de commande observé pendant l'incident (BIN-02 récupéré sur cdn-svc-update.test).
+references:
+    - Dossier d'artefacts SOC Helios Energy, INC-2026-0302 - alerte SIEM 2, indicateurs n°13, 14, 16, 29
+author: Cellule CTI - projet Helios Energy
+date: 2026-10-09
+tags:
+    - attack.command-and-control
+    - attack.t1105
+    - tlp.amber
+logsource:
+    category: proxy
+detection:
+    selection_host:
+        cs-host|endswith:
+            - 'cdn-svc-update.test'
+            - 'api-telemetry-eu.test'
+            - 'static-assets-cache.test'
+    selection_ext:
+        c-uri|endswith:
+            - '.exe'
+            - '.dll'
+            - '.ps1'
+    condition: selection_host and selection_ext
+falsepositives:
+    - Aucun attendu, ces domaines n'ont pas d'usage légitime connu
+level: high

@@ -1,0 +1,29 @@
+title: Création d'un fichier portant un nom d'outil ou de collecte de la campagne
+id: 91674421-b0e1-4f51-ac4e-6eeb42e2e9bb
+status: experimental
+description: |
+    Détecte la création des fichiers déposés pendant l'incident : la balise svchost_update.exe (BIN-02),
+    l'outil rundll32_helper.dll (BIN-03) et le fichier de collecte chiffré ~df3a9.tmp dans C:\Windows\Temp.
+references:
+    - Dossier d'artefacts SOC Helios Energy, INC-2026-0302 - indicateurs n°4, 7, 39, fiches BIN-02 et BIN-03
+author: Cellule CTI - projet Helios Energy
+date: 2026-10-09
+tags:
+    - attack.collection
+    - attack.t1074.001
+    - attack.command-and-control
+    - attack.t1105
+    - tlp.amber
+logsource:
+    category: file_event
+    product: windows
+detection:
+    selection:
+        TargetFilename|endswith:
+            - '\svchost_update.exe'
+            - '\rundll32_helper.dll'
+            - '\Windows\Temp\~df3a9.tmp'
+    condition: selection
+falsepositives:
+    - Aucun attendu
+level: high

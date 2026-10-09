@@ -1,0 +1,45 @@
+title: Application Office lançant PowerShell encodé ou masqué
+id: 176cd95b-c06a-4a34-9305-edca73c19222
+status: experimental
+description: |
+    Détecte une application Office qui engendre PowerShell avec une commande encodée ou une fenêtre masquée.
+    Comportement de BIN-01 (facture_mars_2026.xlsm) sur comptabilite-07.
+    L'alerte 1 cite winword.exe alors que le fichier est un classeur Excel : toutes les applications Office sont couvertes.
+references:
+    - Dossier d'artefacts SOC Helios Energy, INC-2026-0302 - alerte SIEM 1, fiche BIN-01
+author: Cellule CTI - projet Helios Energy
+date: 2026-10-09
+tags:
+    - attack.execution
+    - attack.t1059.001
+    - attack.t1204.002
+    - attack.stealth
+    - attack.t1027
+    - attack.t1564.003
+    - tlp.amber
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_parent:
+        ParentImage|endswith:
+            - '\winword.exe'
+            - '\excel.exe'
+            - '\powerpnt.exe'
+            - '\outlook.exe'
+            - '\msaccess.exe'
+    selection_child:
+        Image|endswith:
+            - '\powershell.exe'
+            - '\pwsh.exe'
+    selection_cli:
+        CommandLine|contains:
+            - ' -enc'
+            - ' -e '
+            - ' -w hidden'
+            - ' -windowstyle hidden'
+            - 'FromBase64String'
+    condition: selection_parent and selection_child and selection_cli
+falsepositives:
+    - Macros internes légitimes appelant PowerShell (rare ; à recenser puis exclure par signataire ou chemin du document)
+level: high

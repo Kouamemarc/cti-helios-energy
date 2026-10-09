@@ -1,0 +1,27 @@
+title: Exécution ou chargement d'un binaire de la campagne (empreintes SHA-256)
+id: e157ead8-8218-4f14-bce1-433e047da0c2
+status: experimental
+description: |
+    Détecte l'exécution de BIN-02 ou de BIN-03 par leur empreinte SHA-256 (cote A1).
+    Détection fragile par nature : une recompilation change l'empreinte. A conserver en complément
+    des règles comportementales, pas à leur place.
+references:
+    - Dossier d'artefacts SOC Helios Energy, INC-2026-0302 - indicateurs n°4 et 7
+author: Cellule CTI - projet Helios Energy
+date: 2026-10-09
+tags:
+    - attack.execution
+    - attack.t1204.002
+    - tlp.amber
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        Hashes|contains:
+            - 'cdf03e90d85977619f7881a13f59a275812dbf0e4ae29874493728b0ef78ebc9'
+            - 'f4109cd2860816d568c5581edf8ed5df28d35471fa8ff849e9ee2451b69135f0'
+    condition: selection
+falsepositives:
+    - Aucun
+level: critical

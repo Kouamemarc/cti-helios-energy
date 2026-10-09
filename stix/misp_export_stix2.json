@@ -1,0 +1,2813 @@
+{
+  "type": "bundle",
+  "id": "bundle--1c56b296-c18e-4771-ba9b-e7ed7112f56f",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-09T08:00:33.000Z",
+      "modified": "2026-10-09T08:00:33.000Z",
+      "name": "ADMIN",
+      "identity_class": "organization"
+    },
+    {
+      "type": "grouping",
+      "spec_version": "2.1",
+      "id": "grouping--1c56b296-c18e-4771-ba9b-e7ed7112f56f",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-09T08:00:33.000Z",
+      "modified": "2026-10-09T08:00:33.000Z",
+      "name": "INC-2026-0302 - Intrusion Helios Energy",
+      "context": "suspicious-activity",
+      "object_refs": [
+        "observed-data--4f51dc52-f672-45f8-a6a7-44197a2a6cd3",
+        "network-traffic--4f51dc52-f672-45f8-a6a7-44197a2a6cd3",
+        "ipv4-addr--4f51dc52-f672-45f8-a6a7-44197a2a6cd3",
+        "indicator--4f51dc52-f672-45f8-a6a7-44197a2a6cd3",
+        "observed-data--5b45ecce-7861-4c13-b734-b7eea3141397",
+        "network-traffic--5b45ecce-7861-4c13-b734-b7eea3141397",
+        "ipv4-addr--5b45ecce-7861-4c13-b734-b7eea3141397",
+        "indicator--5b45ecce-7861-4c13-b734-b7eea3141397",
+        "observed-data--41ce6549-5f80-4d1f-9d3d-3c0a31457eb6",
+        "url--41ce6549-5f80-4d1f-9d3d-3c0a31457eb6",
+        "indicator--41ce6549-5f80-4d1f-9d3d-3c0a31457eb6",
+        "observed-data--33670665-f34b-47ab-9edf-8a840022e861",
+        "url--33670665-f34b-47ab-9edf-8a840022e861",
+        "indicator--33670665-f34b-47ab-9edf-8a840022e861",
+        "observed-data--4c9fd6ba-0952-497e-8c4e-29e153e60c58",
+        "file--4c9fd6ba-0952-497e-8c4e-29e153e60c58",
+        "indicator--4c9fd6ba-0952-497e-8c4e-29e153e60c58",
+        "observed-data--59277f83-03e5-49ee-bfbe-a9ef192e6cc8",
+        "file--59277f83-03e5-49ee-bfbe-a9ef192e6cc8",
+        "indicator--59277f83-03e5-49ee-bfbe-a9ef192e6cc8",
+        "observed-data--2b1fe87a-e19f-4d52-96c4-ebeae5585072",
+        "file--2b1fe87a-e19f-4d52-96c4-ebeae5585072",
+        "indicator--2b1fe87a-e19f-4d52-96c4-ebeae5585072",
+        "observed-data--9d527803-15cb-46c6-8abb-b071e6ab8328",
+        "x509-certificate--9d527803-15cb-46c6-8abb-b071e6ab8328",
+        "indicator--9d527803-15cb-46c6-8abb-b071e6ab8328",
+        "x-misp-attribute--5953927c-06d6-4fae-a309-814e49b8b3c4",
+        "observed-data--34a5d0bb-250e-460a-a32f-7aadb0522149",
+        "windows-registry-key--34a5d0bb-250e-460a-a32f-7aadb0522149",
+        "indicator--34a5d0bb-250e-460a-a32f-7aadb0522149",
+        "observed-data--6afcf22e-fb67-4349-88ac-3e1730b77f83",
+        "file--6afcf22e-fb67-4349-88ac-3e1730b77f83",
+        "indicator--6afcf22e-fb67-4349-88ac-3e1730b77f83",
+        "x-misp-attribute--33936dd5-425f-4663-b8f7-e324adceee2e",
+        "x-misp-attribute--b0cffbb9-601b-4c63-9a2f-9593e572fe00",
+        "observed-data--641d5910-763f-45ae-800b-b38df143990e",
+        "url--641d5910-763f-45ae-800b-b38df143990e",
+        "indicator--641d5910-763f-45ae-800b-b38df143990e",
+        "observed-data--794ef2fc-79bd-4518-9634-f1439dbb28fc",
+        "domain-name--794ef2fc-79bd-4518-9634-f1439dbb28fc",
+        "indicator--794ef2fc-79bd-4518-9634-f1439dbb28fc",
+        "observed-data--acd04950-c324-4a74-831c-9a32d8cead14",
+        "url--acd04950-c324-4a74-831c-9a32d8cead14",
+        "indicator--acd04950-c324-4a74-831c-9a32d8cead14",
+        "observed-data--39b1cfe9-a2ff-4a7a-871e-9f811d0e02ff",
+        "network-traffic--39b1cfe9-a2ff-4a7a-871e-9f811d0e02ff",
+        "ipv4-addr--39b1cfe9-a2ff-4a7a-871e-9f811d0e02ff",
+        "observed-data--18f4080f-eef5-4830-88e2-a74e3a1c8a30",
+        "network-traffic--18f4080f-eef5-4830-88e2-a74e3a1c8a30",
+        "ipv4-addr--18f4080f-eef5-4830-88e2-a74e3a1c8a30",
+        "indicator--18f4080f-eef5-4830-88e2-a74e3a1c8a30",
+        "observed-data--709e2373-a33e-481d-8e93-230acb3587e1",
+        "network-traffic--709e2373-a33e-481d-8e93-230acb3587e1",
+        "ipv4-addr--709e2373-a33e-481d-8e93-230acb3587e1",
+        "indicator--709e2373-a33e-481d-8e93-230acb3587e1",
+        "observed-data--70b95559-e098-4cec-ab2e-e59fd5a9fe5b",
+        "network-traffic--70b95559-e098-4cec-ab2e-e59fd5a9fe5b",
+        "ipv4-addr--70b95559-e098-4cec-ab2e-e59fd5a9fe5b",
+        "observed-data--80506761-cb80-4e94-a3f6-32c7d1b6f02c",
+        "network-traffic--80506761-cb80-4e94-a3f6-32c7d1b6f02c",
+        "ipv4-addr--80506761-cb80-4e94-a3f6-32c7d1b6f02c",
+        "observed-data--1e30b824-1950-4357-bfef-6d13c9dfd90c",
+        "x509-certificate--1e30b824-1950-4357-bfef-6d13c9dfd90c",
+        "indicator--1e30b824-1950-4357-bfef-6d13c9dfd90c",
+        "observed-data--f05fd44b-dada-4ea3-9059-98ce59eea82a",
+        "x509-certificate--f05fd44b-dada-4ea3-9059-98ce59eea82a",
+        "observed-data--ba5227e5-566e-4dbf-851b-9f933ec3197f",
+        "domain-name--ba5227e5-566e-4dbf-851b-9f933ec3197f",
+        "indicator--ba5227e5-566e-4dbf-851b-9f933ec3197f",
+        "observed-data--3ae57bd0-a062-4191-a9b0-dc469659cad8",
+        "domain-name--3ae57bd0-a062-4191-a9b0-dc469659cad8",
+        "observed-data--1f603d83-d3c9-4631-90d4-430b5ccd2e4e",
+        "file--1f603d83-d3c9-4631-90d4-430b5ccd2e4e",
+        "indicator--1f603d83-d3c9-4631-90d4-430b5ccd2e4e",
+        "threat-actor--00220228-a5a4-4032-a30d-826bb55aa3fb",
+        "observed-data--15d28b14-e261-45f0-86b6-72374445111f",
+        "file--15d28b14-e261-45f0-86b6-72374445111f",
+        "indicator--15d28b14-e261-45f0-86b6-72374445111f",
+        "observed-data--00504c87-b03f-4ef3-88d1-4c699f2df7c4",
+        "file--00504c87-b03f-4ef3-88d1-4c699f2df7c4",
+        "indicator--00504c87-b03f-4ef3-88d1-4c699f2df7c4",
+        "observed-data--77017a65-3a93-41b3-b832-9bf33dfe5fcb",
+        "ipv4-addr--b7990467-7d31-435d-95d8-664f6e38d1f8",
+        "domain-name--1c4eefe1-eb1e-4b78-83c1-9d4f5040098a",
+        "indicator--77017a65-3a93-41b3-b832-9bf33dfe5fcb",
+        "observed-data--0ef8cb11-14ae-46b4-98b6-0a7010f2880e",
+        "ipv4-addr--66f5c05d-7431-43fa-9034-f62ff88ec731",
+        "domain-name--f48c05ff-5ba5-4dff-8489-1788c1513e4c",
+        "indicator--0ef8cb11-14ae-46b4-98b6-0a7010f2880e",
+        "observed-data--9d962fa7-c9a5-4b1c-968a-121966503734",
+        "ipv4-addr--61f82c8e-acbf-4e16-a194-ac2689cfe26c",
+        "domain-name--ec0d19ad-b720-4d30-952a-5fd842e76b2a",
+        "indicator--9d962fa7-c9a5-4b1c-968a-121966503734",
+        "attack-pattern--970a3432-3237-47ad-bcca-7d8cbb217736",
+        "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+        "attack-pattern--b8902400-e6c5-4ba2-95aa-2d35b442b118",
+        "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+        "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+        "attack-pattern--9efb1ea7-c37b-4595-9640-b7680cd84279",
+        "attack-pattern--005a06c6-14bf-4118-afa0-ebcd8aebb0c9",
+        "attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161",
+        "relationship--e7febde7-3deb-501f-8074-954a534e4235",
+        "relationship--ed2d981b-ac9a-5a8b-95f4-11f76cc1cb30",
+        "relationship--b81bcb3b-96d9-5eac-8d45-e1bb92ff61d9",
+        "relationship--620bad51-adb8-51d3-a10a-60a8b409ef8b",
+        "relationship--d116ca86-3921-5ac3-8eb7-25bb2687ba85",
+        "relationship--f3c2727e-6dcd-5853-9bd4-8c089f87647b",
+        "relationship--c49ab3d2-603c-51c2-82e4-8b2c681ba390",
+        "relationship--f7581ada-4caa-5a05-90ce-3ab988a99ff7",
+        "relationship--d851665c-43b6-5eba-89f6-be79f1259a3d",
+        "relationship--ff091679-e700-5567-aeb4-26013dd9d3f2",
+        "relationship--aa68e625-02db-5ff2-929b-229877459250",
+        "relationship--dfcf6eb7-0508-53e8-9371-27cd693ccaff",
+        "relationship--34c91f25-f35b-570e-86d6-7996b82f9821",
+        "relationship--0a8bb0c1-fae3-5341-8422-e9532400f84d",
+        "relationship--9d3b1f2e-dc76-5a12-9ce7-7d5960db3f92",
+        "relationship--a419d359-67e9-5e79-b5c1-6382ba0cd178",
+        "relationship--783f7977-d713-5827-b86a-75bb0ab09aca",
+        "relationship--3d7d9350-e7e2-4437-8ce0-181b2f822b57",
+        "relationship--c6d3bed6-b127-4a07-a7a3-4c50ab68a39a",
+        "relationship--df1e4b24-7202-4265-9ebe-14f49415785d",
+        "relationship--9ea546cb-f92a-4847-ab56-f5fa2c7ad63c",
+        "relationship--bb94b6d4-7600-5009-9c0e-6c648e57e3cc",
+        "relationship--4f66fd79-d10e-5b3b-9b3d-5379f18267ae",
+        "relationship--90e9caf7-767e-4163-ac33-a9935f51e500",
+        "relationship--64c531c0-2ad1-45d1-9b04-41dea1acb694",
+        "relationship--65966597-76f9-4b5d-af65-101efcd9eeca",
+        "relationship--bc6b4048-090d-4510-afb0-eed5a9c7bdf6",
+        "relationship--f74db597-50e3-4417-b8fe-edfe280f2d4e",
+        "relationship--49b08e5d-b43d-4bcb-bbb4-8b11bda4ce07",
+        "relationship--d3dadf94-4938-5ba0-8000-f398398ced6c",
+        "relationship--db401551-749f-4a40-8daf-76df88e60d99",
+        "relationship--be91faf5-49fd-4261-9f16-e603afa6a075",
+        "relationship--3028af09-64c1-4cff-8040-b36b5dd71299",
+        "relationship--4c76d97b-30b1-5f78-a785-9858fc5a4400",
+        "relationship--a8cf2d3a-bbda-5366-8ff4-c94ca6030c61",
+        "relationship--e4a9b607-1265-52f6-b645-e7927a5fec12",
+        "relationship--6066a45f-0366-4f3a-b508-9ceb25ef0b4b",
+        "relationship--3b154ac8-7f13-5f29-81c8-9b14d1e3cd42"
+      ],
+      "labels": [
+        "Threat-Report",
+        "misp:tool=\"MISP-STIX-Converter\""
+      ],
+      "object_marking_refs": [
+        "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--4f51dc52-f672-45f8-a6a7-44197a2a6cd3",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T09:40:45.000Z",
+      "modified": "2026-10-07T09:40:45.000Z",
+      "first_observed": "2026-10-07T09:40:45Z",
+      "last_observed": "2026-10-07T09:40:45Z",
+      "number_observed": 1,
+      "object_refs": [
+        "network-traffic--4f51dc52-f672-45f8-a6a7-44197a2a6cd3",
+        "ipv4-addr--4f51dc52-f672-45f8-a6a7-44197a2a6cd3"
+      ],
+      "labels": [
+        "misp:type=\"ip-dst\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "network-traffic",
+      "spec_version": "2.1",
+      "id": "network-traffic--4f51dc52-f672-45f8-a6a7-44197a2a6cd3",
+      "dst_ref": "ipv4-addr--4f51dc52-f672-45f8-a6a7-44197a2a6cd3",
+      "protocols": [
+        "tcp"
+      ]
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--4f51dc52-f672-45f8-a6a7-44197a2a6cd3",
+      "value": "203.0.113.14"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--4f51dc52-f672-45f8-a6a7-44197a2a6cd3",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T09:40:45.000Z",
+      "modified": "2026-10-07T09:40:45.000Z",
+      "description": "Source : SOC Helios, 02_indicateurs_40.csv - Collecté le 2026-10-06",
+      "pattern": "[network-traffic:dst_ref.type = 'ipv4-addr' AND network-traffic:dst_ref.value = '203.0.113.14']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T09:40:45Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "Network activity"
+        }
+      ],
+      "labels": [
+        "misp:type=\"ip-dst\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--5b45ecce-7861-4c13-b734-b7eea3141397",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T09:41:01.000Z",
+      "modified": "2026-10-07T09:41:01.000Z",
+      "first_observed": "2026-10-07T09:41:01Z",
+      "last_observed": "2026-10-07T09:41:01Z",
+      "number_observed": 1,
+      "object_refs": [
+        "network-traffic--5b45ecce-7861-4c13-b734-b7eea3141397",
+        "ipv4-addr--5b45ecce-7861-4c13-b734-b7eea3141397"
+      ],
+      "labels": [
+        "misp:type=\"ip-dst\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "network-traffic",
+      "spec_version": "2.1",
+      "id": "network-traffic--5b45ecce-7861-4c13-b734-b7eea3141397",
+      "dst_ref": "ipv4-addr--5b45ecce-7861-4c13-b734-b7eea3141397",
+      "protocols": [
+        "tcp"
+      ]
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--5b45ecce-7861-4c13-b734-b7eea3141397",
+      "value": "203.0.113.28"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--5b45ecce-7861-4c13-b734-b7eea3141397",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T09:41:01.000Z",
+      "modified": "2026-10-07T09:41:01.000Z",
+      "description": "Source : SOC Helios, 02_indicateurs_40.csv - Collecté le 2026-10-06",
+      "pattern": "[network-traffic:dst_ref.type = 'ipv4-addr' AND network-traffic:dst_ref.value = '203.0.113.28']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T09:41:01Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "Network activity"
+        }
+      ],
+      "labels": [
+        "misp:type=\"ip-dst\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--41ce6549-5f80-4d1f-9d3d-3c0a31457eb6",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T09:41:19.000Z",
+      "modified": "2026-10-07T09:41:19.000Z",
+      "first_observed": "2026-10-07T09:41:19Z",
+      "last_observed": "2026-10-07T09:41:19Z",
+      "number_observed": 1,
+      "object_refs": [
+        "url--41ce6549-5f80-4d1f-9d3d-3c0a31457eb6"
+      ],
+      "labels": [
+        "misp:type=\"url\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--41ce6549-5f80-4d1f-9d3d-3c0a31457eb6",
+      "value": "https://cdn-svc-update.test/win/svchost_update.exe"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--41ce6549-5f80-4d1f-9d3d-3c0a31457eb6",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T09:41:19.000Z",
+      "modified": "2026-10-07T09:41:19.000Z",
+      "description": "Source : SOC Helios, 02_indicateurs_40.csv - Collecté le 2026-10-06",
+      "pattern": "[url:value = 'https://cdn-svc-update.test/win/svchost_update.exe']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T09:41:19Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "Network activity"
+        }
+      ],
+      "labels": [
+        "misp:type=\"url\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--33670665-f34b-47ab-9edf-8a840022e861",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T09:41:36.000Z",
+      "modified": "2026-10-07T09:41:36.000Z",
+      "first_observed": "2026-10-07T09:41:36Z",
+      "last_observed": "2026-10-07T09:41:36Z",
+      "number_observed": 1,
+      "object_refs": [
+        "url--33670665-f34b-47ab-9edf-8a840022e861"
+      ],
+      "labels": [
+        "misp:type=\"url\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--33670665-f34b-47ab-9edf-8a840022e861",
+      "value": "https://api-telemetry-eu.test/v2/beacon"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--33670665-f34b-47ab-9edf-8a840022e861",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T09:41:36.000Z",
+      "modified": "2026-10-07T09:41:36.000Z",
+      "description": "Source : SOC Helios, 02_indicateurs_40.csv - Collecté le 2026-10-06",
+      "pattern": "[url:value = 'https://api-telemetry-eu.test/v2/beacon']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T09:41:36Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "Network activity"
+        }
+      ],
+      "labels": [
+        "misp:type=\"url\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--4c9fd6ba-0952-497e-8c4e-29e153e60c58",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-09T07:51:48.000Z",
+      "modified": "2026-10-09T07:51:48.000Z",
+      "first_observed": "2026-10-09T07:51:48Z",
+      "last_observed": "2026-10-09T07:51:48Z",
+      "number_observed": 1,
+      "object_refs": [
+        "file--4c9fd6ba-0952-497e-8c4e-29e153e60c58"
+      ],
+      "labels": [
+        "misp:type=\"sha256\"",
+        "misp:category=\"Payload delivery\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "file",
+      "spec_version": "2.1",
+      "id": "file--4c9fd6ba-0952-497e-8c4e-29e153e60c58",
+      "hashes": {
+        "SHA-256": "81aa487933bb715f9dabd1755eff6cfd13a9c635e1b3bc4adff3ccbc78b8660f"
+      }
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--4c9fd6ba-0952-497e-8c4e-29e153e60c58",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-09T07:51:48.000Z",
+      "modified": "2026-10-09T07:51:48.000Z",
+      "description": "Charge PowerShell en mémoire (BIN-01) - CSV n°10 - Collecté le 2026-10-06",
+      "pattern": "[file:hashes.'SHA-256' = '81aa487933bb715f9dabd1755eff6cfd13a9c635e1b3bc4adff3ccbc78b8660f']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-09T07:51:48Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "Payload delivery"
+        }
+      ],
+      "labels": [
+        "misp:type=\"sha256\"",
+        "misp:category=\"Payload delivery\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--59277f83-03e5-49ee-bfbe-a9ef192e6cc8",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-09T07:52:46.000Z",
+      "modified": "2026-10-09T07:52:46.000Z",
+      "first_observed": "2026-10-09T07:52:46Z",
+      "last_observed": "2026-10-09T07:52:46Z",
+      "number_observed": 1,
+      "object_refs": [
+        "file--59277f83-03e5-49ee-bfbe-a9ef192e6cc8"
+      ],
+      "labels": [
+        "misp:type=\"sha256\"",
+        "misp:category=\"Payload delivery\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "file",
+      "spec_version": "2.1",
+      "id": "file--59277f83-03e5-49ee-bfbe-a9ef192e6cc8",
+      "hashes": {
+        "SHA-256": "8772b487de8ea8d30a7630e906afa95dcbf4a75f5915066f8b6a40d487201171"
+      }
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--59277f83-03e5-49ee-bfbe-a9ef192e6cc8",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-09T07:52:46.000Z",
+      "modified": "2026-10-09T07:52:46.000Z",
+      "description": "Module injecté dans explorer.exe (BIN-02) - CSV n°11 - Collecté le 2026-10-06",
+      "pattern": "[file:hashes.'SHA-256' = '8772b487de8ea8d30a7630e906afa95dcbf4a75f5915066f8b6a40d487201171']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-09T07:52:46Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "Payload delivery"
+        }
+      ],
+      "labels": [
+        "misp:type=\"sha256\"",
+        "misp:category=\"Payload delivery\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--2b1fe87a-e19f-4d52-96c4-ebeae5585072",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-09T07:53:28.000Z",
+      "modified": "2026-10-09T07:53:28.000Z",
+      "first_observed": "2026-10-09T07:53:28Z",
+      "last_observed": "2026-10-09T07:53:28Z",
+      "number_observed": 1,
+      "object_refs": [
+        "file--2b1fe87a-e19f-4d52-96c4-ebeae5585072"
+      ],
+      "labels": [
+        "misp:type=\"sha256\"",
+        "misp:category=\"Payload delivery\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "file",
+      "spec_version": "2.1",
+      "id": "file--2b1fe87a-e19f-4d52-96c4-ebeae5585072",
+      "hashes": {
+        "SHA-256": "a0e1f129a0155e96b0e04e8bc26b0d07fa8fb47c79f63a7e5a6227b27f239730"
+      }
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--2b1fe87a-e19f-4d52-96c4-ebeae5585072",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-09T07:53:28.000Z",
+      "modified": "2026-10-09T07:53:28.000Z",
+      "description": "Archive chiffrée avant exfiltration (BIN-03) - CSV n°12 - Collecté le 2026-10-06",
+      "pattern": "[file:hashes.'SHA-256' = 'a0e1f129a0155e96b0e04e8bc26b0d07fa8fb47c79f63a7e5a6227b27f239730']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-09T07:53:28Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "Payload delivery"
+        }
+      ],
+      "labels": [
+        "misp:type=\"sha256\"",
+        "misp:category=\"Payload delivery\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--9d527803-15cb-46c6-8abb-b071e6ab8328",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-09T07:54:07.000Z",
+      "modified": "2026-10-09T07:54:07.000Z",
+      "first_observed": "2026-10-09T07:54:07Z",
+      "last_observed": "2026-10-09T07:54:07Z",
+      "number_observed": 1,
+      "object_refs": [
+        "x509-certificate--9d527803-15cb-46c6-8abb-b071e6ab8328"
+      ],
+      "labels": [
+        "misp:type=\"x509-fingerprint-sha1\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "x509-certificate",
+      "spec_version": "2.1",
+      "id": "x509-certificate--9d527803-15cb-46c6-8abb-b071e6ab8328",
+      "hashes": {
+        "SHA-1": "bda5d6c36e3ff362f9ce0957370a429fff58eb37"
+      }
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--9d527803-15cb-46c6-8abb-b071e6ab8328",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-09T07:54:07.000Z",
+      "modified": "2026-10-09T07:54:07.000Z",
+      "description": "Certificat auto-signé CN=update-service, partagé par les C2 - CSV n°33 - Collecté le 2026-10-06",
+      "pattern": "[x509-certificate:hashes.'SHA-1' = 'bda5d6c36e3ff362f9ce0957370a429fff58eb37']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-09T07:54:07Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "Network activity"
+        }
+      ],
+      "labels": [
+        "misp:type=\"x509-fingerprint-sha1\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "x-misp-attribute",
+      "spec_version": "2.1",
+      "id": "x-misp-attribute--5953927c-06d6-4fae-a309-814e49b8b3c4",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T10:47:12.000Z",
+      "modified": "2026-10-07T10:47:12.000Z",
+      "labels": [
+        "misp:type=\"windows-scheduled-task\"",
+        "misp:category=\"Artifacts dropped\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"a\""
+      ],
+      "x_misp_category": "Artifacts dropped",
+      "x_misp_comment": "Persistance de BIN-02, imite la tâche Edge légitime - CSV n°36 - Collecté le 2026-10-06",
+      "x_misp_type": "windows-scheduled-task",
+      "x_misp_value": "MicrosoftEdgeUpdateTaskMachine"
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--34a5d0bb-250e-460a-a32f-7aadb0522149",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T10:54:56.000Z",
+      "modified": "2026-10-07T10:54:56.000Z",
+      "first_observed": "2026-03-02T08:44:00Z",
+      "last_observed": "2026-10-07T10:54:56Z",
+      "number_observed": 1,
+      "object_refs": [
+        "windows-registry-key--34a5d0bb-250e-460a-a32f-7aadb0522149"
+      ],
+      "labels": [
+        "misp:type=\"regkey\"",
+        "misp:category=\"Persistence mechanism\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"a\""
+      ]
+    },
+    {
+      "type": "windows-registry-key",
+      "spec_version": "2.1",
+      "id": "windows-registry-key--34a5d0bb-250e-460a-a32f-7aadb0522149",
+      "key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\WinTelemetry"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--34a5d0bb-250e-460a-a32f-7aadb0522149",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T10:54:56.000Z",
+      "modified": "2026-10-07T10:54:56.000Z",
+      "description": "Persistance posée par BIN-01 - CSV n°38 et fiche BIN-01 - Collecté le 2026-10-06",
+      "pattern": "[windows-registry-key:key = 'HKCU\\\\Software\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Run\\\\WinTelemetry']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T10:54:56Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "Persistence mechanism"
+        }
+      ],
+      "labels": [
+        "misp:type=\"regkey\"",
+        "misp:category=\"Persistence mechanism\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"a\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--6afcf22e-fb67-4349-88ac-3e1730b77f83",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T10:54:20.000Z",
+      "modified": "2026-10-07T10:54:20.000Z",
+      "first_observed": "2026-03-05T14:40:00Z",
+      "last_observed": "2026-10-07T10:54:20Z",
+      "number_observed": 1,
+      "object_refs": [
+        "file--6afcf22e-fb67-4349-88ac-3e1730b77f83"
+      ],
+      "labels": [
+        "misp:type=\"filename\"",
+        "misp:category=\"Artifacts dropped\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "file",
+      "spec_version": "2.1",
+      "id": "file--6afcf22e-fb67-4349-88ac-3e1730b77f83",
+      "name": "%WINDIR%\\Temp\\~df3a9.tmp"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--6afcf22e-fb67-4349-88ac-3e1730b77f83",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T10:54:20.000Z",
+      "modified": "2026-10-07T10:54:20.000Z",
+      "description": "Fichier chiffré avant exfiltration (BIN-03) - CSV n°39 - Collecté le 2026-10-06",
+      "pattern": "[file:name = '%WINDIR%\\\\Temp\\\\~df3a9.tmp']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T10:54:20Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "Artifacts dropped"
+        }
+      ],
+      "labels": [
+        "misp:type=\"filename\"",
+        "misp:category=\"Artifacts dropped\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "x-misp-attribute",
+      "spec_version": "2.1",
+      "id": "x-misp-attribute--33936dd5-425f-4663-b8f7-e324adceee2e",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T11:00:06.000Z",
+      "modified": "2026-10-07T11:00:06.000Z",
+      "labels": [
+        "misp:type=\"text\"",
+        "misp:category=\"Artifacts dropped\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ],
+      "x_misp_category": "Artifacts dropped",
+      "x_misp_comment": "Compte créé à 14:10 puis supprimé à 14:55 sur dc-01 - CSV n°37 - Collecté le 2026-10-06",
+      "x_misp_type": "text",
+      "x_misp_value": "svc-backup-temp"
+    },
+    {
+      "type": "x-misp-attribute",
+      "spec_version": "2.1",
+      "id": "x-misp-attribute--b0cffbb9-601b-4c63-9a2f-9593e572fe00",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T11:02:30.000Z",
+      "modified": "2026-10-07T11:02:30.000Z",
+      "labels": [
+        "misp:type=\"target-machine\"",
+        "misp:category=\"Targeting data\"",
+        "admiralty-scale:information-credibility=\"1\"",
+        "admiralty-scale:source-reliability=\"a\""
+      ],
+      "x_misp_category": "Targeting data",
+      "x_misp_comment": "Patient zéro, actif de la victime - CSV n°40 - Collecté le 2026-10-06",
+      "x_misp_type": "target-machine",
+      "x_misp_value": "comptabilite-07"
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--641d5910-763f-45ae-800b-b38df143990e",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T11:10:30.000Z",
+      "modified": "2026-10-07T11:10:30.000Z",
+      "first_observed": "2026-03-02T07:58:00Z",
+      "last_observed": "2026-10-07T11:10:30Z",
+      "number_observed": 1,
+      "object_refs": [
+        "url--641d5910-763f-45ae-800b-b38df143990e"
+      ],
+      "labels": [
+        "misp:type=\"url\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"c\""
+      ]
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--641d5910-763f-45ae-800b-b38df143990e",
+      "value": "https://mail-secure-login.test/owa/auth"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--641d5910-763f-45ae-800b-b38df143990e",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T11:10:30.000Z",
+      "modified": "2026-10-07T11:10:30.000Z",
+      "description": "Page de collecte d'identifiants - CSV n°30 - Collecté le 2026-10-06",
+      "pattern": "[url:value = 'https://mail-secure-login.test/owa/auth']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T11:10:30Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "Network activity"
+        }
+      ],
+      "labels": [
+        "misp:type=\"url\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"c\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--794ef2fc-79bd-4518-9634-f1439dbb28fc",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T12:43:03.000Z",
+      "modified": "2026-10-07T12:43:03.000Z",
+      "first_observed": "2026-03-02T06:40:00Z",
+      "last_observed": "2026-10-07T12:43:03Z",
+      "number_observed": 1,
+      "object_refs": [
+        "domain-name--794ef2fc-79bd-4518-9634-f1439dbb28fc"
+      ],
+      "labels": [
+        "misp:type=\"domain\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"3\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "domain-name",
+      "spec_version": "2.1",
+      "id": "domain-name--794ef2fc-79bd-4518-9634-f1439dbb28fc",
+      "value": "helios-energy-portal.test"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--794ef2fc-79bd-4518-9634-f1439dbb28fc",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T12:43:03.000Z",
+      "modified": "2026-10-07T12:43:03.000Z",
+      "description": "Domaine d'usurpation imitant la victime - CSV n°17 - Collecté le 2026-10-06",
+      "pattern": "[domain-name:value = 'helios-energy-portal.test']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T12:43:03Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "Network activity"
+        }
+      ],
+      "labels": [
+        "misp:type=\"domain\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"3\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--acd04950-c324-4a74-831c-9a32d8cead14",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T12:42:44.000Z",
+      "modified": "2026-10-07T12:42:44.000Z",
+      "first_observed": "2026-03-02T06:40:00Z",
+      "last_observed": "2026-10-07T12:42:44Z",
+      "number_observed": 1,
+      "object_refs": [
+        "url--acd04950-c324-4a74-831c-9a32d8cead14"
+      ],
+      "labels": [
+        "misp:type=\"url\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"3\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "url",
+      "spec_version": "2.1",
+      "id": "url--acd04950-c324-4a74-831c-9a32d8cead14",
+      "value": "https://helios-energy-portal.test/hr/doc"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--acd04950-c324-4a74-831c-9a32d8cead14",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T12:42:44.000Z",
+      "modified": "2026-10-07T12:42:44.000Z",
+      "description": "Leurre imitant le portail RH de la victime - CSV n°32 - Collecté le 2026-10-06",
+      "pattern": "[url:value = 'https://helios-energy-portal.test/hr/doc']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T12:42:44Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "Network activity"
+        }
+      ],
+      "labels": [
+        "misp:type=\"url\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"3\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--39b1cfe9-a2ff-4a7a-871e-9f811d0e02ff",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T12:51:24.000Z",
+      "modified": "2026-10-07T12:51:24.000Z",
+      "first_observed": "2026-10-07T12:51:24Z",
+      "last_observed": "2026-10-07T12:51:24Z",
+      "number_observed": 1,
+      "object_refs": [
+        "network-traffic--39b1cfe9-a2ff-4a7a-871e-9f811d0e02ff",
+        "ipv4-addr--39b1cfe9-a2ff-4a7a-871e-9f811d0e02ff"
+      ],
+      "labels": [
+        "misp:type=\"ip-src\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"3\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "network-traffic",
+      "spec_version": "2.1",
+      "id": "network-traffic--39b1cfe9-a2ff-4a7a-871e-9f811d0e02ff",
+      "src_ref": "ipv4-addr--39b1cfe9-a2ff-4a7a-871e-9f811d0e02ff",
+      "protocols": [
+        "tcp"
+      ]
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--39b1cfe9-a2ff-4a7a-871e-9f811d0e02ff",
+      "value": "198.51.100.55"
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--18f4080f-eef5-4830-88e2-a74e3a1c8a30",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T12:51:52.000Z",
+      "modified": "2026-10-07T12:51:52.000Z",
+      "first_observed": "2026-10-07T12:51:52Z",
+      "last_observed": "2026-10-07T12:51:52Z",
+      "number_observed": 1,
+      "object_refs": [
+        "network-traffic--18f4080f-eef5-4830-88e2-a74e3a1c8a30",
+        "ipv4-addr--18f4080f-eef5-4830-88e2-a74e3a1c8a30"
+      ],
+      "labels": [
+        "misp:type=\"ip-dst\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"3\"",
+        "admiralty-scale:source-reliability=\"c\""
+      ]
+    },
+    {
+      "type": "network-traffic",
+      "spec_version": "2.1",
+      "id": "network-traffic--18f4080f-eef5-4830-88e2-a74e3a1c8a30",
+      "dst_ref": "ipv4-addr--18f4080f-eef5-4830-88e2-a74e3a1c8a30",
+      "protocols": [
+        "tcp"
+      ]
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--18f4080f-eef5-4830-88e2-a74e3a1c8a30",
+      "value": "203.0.113.15"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--18f4080f-eef5-4830-88e2-a74e3a1c8a30",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T12:51:52.000Z",
+      "modified": "2026-10-07T12:51:52.000Z",
+      "description": "Serveur de commande de repli - CSV n°22 - Collecté le 2026-10-06",
+      "pattern": "[network-traffic:dst_ref.type = 'ipv4-addr' AND network-traffic:dst_ref.value = '203.0.113.15']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T12:51:52Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "Network activity"
+        }
+      ],
+      "labels": [
+        "misp:type=\"ip-dst\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"3\"",
+        "admiralty-scale:source-reliability=\"c\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--709e2373-a33e-481d-8e93-230acb3587e1",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T12:52:13.000Z",
+      "modified": "2026-10-07T12:52:13.000Z",
+      "first_observed": "2026-10-07T12:52:13Z",
+      "last_observed": "2026-10-07T12:52:13Z",
+      "number_observed": 1,
+      "object_refs": [
+        "network-traffic--709e2373-a33e-481d-8e93-230acb3587e1",
+        "ipv4-addr--709e2373-a33e-481d-8e93-230acb3587e1"
+      ],
+      "labels": [
+        "misp:type=\"ip-src\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"3\"",
+        "admiralty-scale:source-reliability=\"c\""
+      ]
+    },
+    {
+      "type": "network-traffic",
+      "spec_version": "2.1",
+      "id": "network-traffic--709e2373-a33e-481d-8e93-230acb3587e1",
+      "src_ref": "ipv4-addr--709e2373-a33e-481d-8e93-230acb3587e1",
+      "protocols": [
+        "tcp"
+      ]
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--709e2373-a33e-481d-8e93-230acb3587e1",
+      "value": "203.0.113.44"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--709e2373-a33e-481d-8e93-230acb3587e1",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T12:52:13.000Z",
+      "modified": "2026-10-07T12:52:13.000Z",
+      "description": "RDP hors horaires, contredit par l'alerte 7 (source interne) - CSV n°26 - Collecté le 2026-10-06",
+      "pattern": "[network-traffic:src_ref.type = 'ipv4-addr' AND network-traffic:src_ref.value = '203.0.113.44']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T12:52:13Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "Network activity"
+        }
+      ],
+      "labels": [
+        "misp:type=\"ip-src\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"3\"",
+        "admiralty-scale:source-reliability=\"c\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--70b95559-e098-4cec-ab2e-e59fd5a9fe5b",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T12:53:27.000Z",
+      "modified": "2026-10-07T12:53:27.000Z",
+      "first_observed": "2026-10-07T12:53:27Z",
+      "last_observed": "2026-10-07T12:53:27Z",
+      "number_observed": 1,
+      "object_refs": [
+        "network-traffic--70b95559-e098-4cec-ab2e-e59fd5a9fe5b",
+        "ipv4-addr--70b95559-e098-4cec-ab2e-e59fd5a9fe5b"
+      ],
+      "labels": [
+        "misp:type=\"ip-dst\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"4\"",
+        "admiralty-scale:source-reliability=\"c\""
+      ]
+    },
+    {
+      "type": "network-traffic",
+      "spec_version": "2.1",
+      "id": "network-traffic--70b95559-e098-4cec-ab2e-e59fd5a9fe5b",
+      "dst_ref": "ipv4-addr--70b95559-e098-4cec-ab2e-e59fd5a9fe5b",
+      "protocols": [
+        "tcp"
+      ]
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--70b95559-e098-4cec-ab2e-e59fd5a9fe5b",
+      "value": "198.51.100.61"
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--80506761-cb80-4e94-a3f6-32c7d1b6f02c",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T12:54:46.000Z",
+      "modified": "2026-10-07T12:54:46.000Z",
+      "first_observed": "2026-10-07T12:54:46Z",
+      "last_observed": "2026-10-07T12:54:46Z",
+      "number_observed": 1,
+      "object_refs": [
+        "network-traffic--80506761-cb80-4e94-a3f6-32c7d1b6f02c",
+        "ipv4-addr--80506761-cb80-4e94-a3f6-32c7d1b6f02c"
+      ],
+      "labels": [
+        "misp:type=\"ip-dst\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"4\"",
+        "admiralty-scale:source-reliability=\"d\""
+      ]
+    },
+    {
+      "type": "network-traffic",
+      "spec_version": "2.1",
+      "id": "network-traffic--80506761-cb80-4e94-a3f6-32c7d1b6f02c",
+      "dst_ref": "ipv4-addr--80506761-cb80-4e94-a3f6-32c7d1b6f02c",
+      "protocols": [
+        "tcp"
+      ]
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--80506761-cb80-4e94-a3f6-32c7d1b6f02c",
+      "value": "203.0.113.60"
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--1e30b824-1950-4357-bfef-6d13c9dfd90c",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T12:52:52.000Z",
+      "modified": "2026-10-07T12:52:52.000Z",
+      "first_observed": "2026-10-07T12:52:52Z",
+      "last_observed": "2026-10-07T12:52:52Z",
+      "number_observed": 1,
+      "object_refs": [
+        "x509-certificate--1e30b824-1950-4357-bfef-6d13c9dfd90c"
+      ],
+      "labels": [
+        "misp:type=\"x509-fingerprint-sha1\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"3\"",
+        "admiralty-scale:source-reliability=\"c\""
+      ]
+    },
+    {
+      "type": "x509-certificate",
+      "spec_version": "2.1",
+      "id": "x509-certificate--1e30b824-1950-4357-bfef-6d13c9dfd90c",
+      "hashes": {
+        "SHA-1": "0315d14dd4b9095a10e359cbaf4129f0a6322a59"
+      }
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--1e30b824-1950-4357-bfef-6d13c9dfd90c",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T12:52:52.000Z",
+      "modified": "2026-10-07T12:52:52.000Z",
+      "description": "Certificat de la page d'hameçonnage - CSV n°34 - Collecté le 2026-10-06",
+      "pattern": "[x509-certificate:hashes.'SHA-1' = '0315d14dd4b9095a10e359cbaf4129f0a6322a59']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T12:52:52Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "Network activity"
+        }
+      ],
+      "labels": [
+        "misp:type=\"x509-fingerprint-sha1\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"3\"",
+        "admiralty-scale:source-reliability=\"c\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--f05fd44b-dada-4ea3-9059-98ce59eea82a",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T12:54:27.000Z",
+      "modified": "2026-10-07T12:54:27.000Z",
+      "first_observed": "2026-10-07T12:54:27Z",
+      "last_observed": "2026-10-07T12:54:27Z",
+      "number_observed": 1,
+      "object_refs": [
+        "x509-certificate--f05fd44b-dada-4ea3-9059-98ce59eea82a"
+      ],
+      "labels": [
+        "misp:type=\"x509-fingerprint-sha1\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"4\"",
+        "admiralty-scale:source-reliability=\"c\""
+      ]
+    },
+    {
+      "type": "x509-certificate",
+      "spec_version": "2.1",
+      "id": "x509-certificate--f05fd44b-dada-4ea3-9059-98ce59eea82a",
+      "hashes": {
+        "SHA-1": "1e8bd87af841cda6441306558f11d973eb0a5601"
+      }
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--ba5227e5-566e-4dbf-851b-9f933ec3197f",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T13:00:45.000Z",
+      "modified": "2026-10-07T13:00:45.000Z",
+      "first_observed": "2026-03-03T03:22:00Z",
+      "last_observed": "2026-10-07T13:00:45Z",
+      "number_observed": 1,
+      "object_refs": [
+        "domain-name--ba5227e5-566e-4dbf-851b-9f933ec3197f"
+      ],
+      "labels": [
+        "misp:type=\"domain\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"3\"",
+        "admiralty-scale:source-reliability=\"c\""
+      ]
+    },
+    {
+      "type": "domain-name",
+      "spec_version": "2.1",
+      "id": "domain-name--ba5227e5-566e-4dbf-851b-9f933ec3197f",
+      "value": "static-assets-cache.test"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--ba5227e5-566e-4dbf-851b-9f933ec3197f",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T13:00:45.000Z",
+      "modified": "2026-10-07T13:00:45.000Z",
+      "description": "Second domaine de repli, même certificat que le C2 - CSV n°16 - Collecté le 2026-10-06",
+      "pattern": "[domain-name:value = 'static-assets-cache.test']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T13:00:45Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "Network activity"
+        }
+      ],
+      "labels": [
+        "misp:type=\"domain\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"3\"",
+        "admiralty-scale:source-reliability=\"c\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--3ae57bd0-a062-4191-a9b0-dc469659cad8",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T13:00:18.000Z",
+      "modified": "2026-10-07T13:00:18.000Z",
+      "first_observed": "2026-03-04T11:04:00Z",
+      "last_observed": "2026-10-07T13:00:18Z",
+      "number_observed": 1,
+      "object_refs": [
+        "domain-name--3ae57bd0-a062-4191-a9b0-dc469659cad8"
+      ],
+      "labels": [
+        "misp:type=\"domain\"",
+        "misp:category=\"Network activity\"",
+        "admiralty-scale:information-credibility=\"3\"",
+        "admiralty-scale:source-reliability=\"c\""
+      ]
+    },
+    {
+      "type": "domain-name",
+      "spec_version": "2.1",
+      "id": "domain-name--3ae57bd0-a062-4191-a9b0-dc469659cad8",
+      "value": "update-win-msft.test"
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--1f603d83-d3c9-4631-90d4-430b5ccd2e4e",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-08T12:53:47.000Z",
+      "modified": "2026-10-08T12:53:47.000Z",
+      "first_observed": "2026-03-02T08:30:00Z",
+      "last_observed": "2026-10-08T12:53:47Z",
+      "number_observed": 1,
+      "object_refs": [
+        "file--1f603d83-d3c9-4631-90d4-430b5ccd2e4e"
+      ],
+      "labels": [
+        "misp:name=\"file\"",
+        "misp:meta-category=\"file\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:information-credibility=\"1\"",
+        "admiralty-scale:source-reliability=\"a\""
+      ]
+    },
+    {
+      "type": "file",
+      "spec_version": "2.1",
+      "id": "file--1f603d83-d3c9-4631-90d4-430b5ccd2e4e",
+      "hashes": {
+        "MD5": "8ba35251cca8daa4a05331bba8f95b05",
+        "SHA-1": "4911bfb2fa8f76909de149299ef05e6b1455ea24",
+        "SHA-256": "2d10d13c3f3a045dc12a48e0a484018c053d0e83c607f2796fc9b8307c0d66e5"
+      },
+      "size": 68242,
+      "name": "facture_mars_2026.xlsm"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--1f603d83-d3c9-4631-90d4-430b5ccd2e4e",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-08T12:53:47.000Z",
+      "modified": "2026-10-08T12:53:47.000Z",
+      "description": "BIN-01 - Source : SOC Helios, fiche d'analyse et CSV n°1 à 3 - Collecté le 2026-10-06",
+      "pattern": "[file:hashes.MD5 = '8ba35251cca8daa4a05331bba8f95b05' AND file:hashes.'SHA-1' = '4911bfb2fa8f76909de149299ef05e6b1455ea24' AND file:hashes.'SHA-256' = '2d10d13c3f3a045dc12a48e0a484018c053d0e83c607f2796fc9b8307c0d66e5' AND file:name = 'facture_mars_2026.xlsm']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-08T12:53:47Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "file"
+        }
+      ],
+      "labels": [
+        "misp:name=\"file\"",
+        "misp:meta-category=\"file\"",
+        "admiralty-scale:source-reliability=\"a\"",
+        "admiralty-scale:information-credibility=\"1\""
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--00220228-a5a4-4032-a30d-826bb55aa3fb",
+      "created": "2026-10-09T07:35:06.000Z",
+      "modified": "2026-10-09T07:35:06.000Z",
+      "name": "FIN7",
+      "description": "Groups targeting financial organizations or people with significant financial assets.",
+      "aliases": [
+        "CARBON SPIDER",
+        "GOLD NIAGARA",
+        "Calcium",
+        "ATK32",
+        "G0046",
+        "G0008",
+        "Coreid",
+        "Carbanak",
+        "Sangria Tempest",
+        "ELBRUS",
+        "Carbon Spider",
+        "JokerStash",
+        "WILD COMET"
+      ],
+      "labels": [
+        "misp:galaxy-name=\"Threat Actor\"",
+        "misp:galaxy-type=\"threat-actor\"",
+        "misp-galaxy:threat-actor=\"FIN7\""
+      ],
+      "external_references": [
+        {
+          "source_name": "url",
+          "url": "https://en.wikipedia.org/wiki/Carbanak"
+        },
+        {
+          "source_name": "url",
+          "url": "https://app.box.com/s/p7qzcury97tuwk26694uutujwqmwqyhe"
+        },
+        {
+          "source_name": "url",
+          "url": "http://2014.zeronights.ru/assets/files/slides/ivanovb-zeronights.pdf"
+        },
+        {
+          "source_name": "url",
+          "url": "https://web.archive.org/web/20161223002016/https://www.symantec.com/connect/blogs/odinaff-new-trojan-used-high-level-financial-attacks"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/fin7carbanak-threat-actor-unleashes-bateleur-jscript-backdoor"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.icebrg.io/blog/footprints-of-fin7-tracking-actor-patterns"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.crowdstrike.com/blog/arrests-put-new-focus-on-carbon-spider-adversary-group/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.europol.europa.eu/newsroom/news/mastermind-behind-eur-1-billion-cyber-bank-robbery-arrested-in-spain"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.computerweekly.com/news/252446153/Three-Carbanak-cyber-heist-gang-members-arrested"
+        },
+        {
+          "source_name": "url",
+          "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.group-ib.com/resources/threat-research/Anunak_APT_against_financial_institutions.pdf"
+        },
+        {
+          "source_name": "url",
+          "url": "https://attack.mitre.org/groups/G0008/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.fireeye.com/blog/threat-research/2017/03/fin7_spear_phishing.html"
+        },
+        {
+          "source_name": "url",
+          "url": "https://threatpost.com/fileless-malware-campaigns-tied-to-same-attacker/124369/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.fireeye.com/blog/threat-research/2017/04/fin7-phishing-lnk.html"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.fireeye.com/blog/threat-research/2017/05/fin7-shim-databases-persistence.html"
+        },
+        {
+          "source_name": "url",
+          "url": "https://blog.morphisec.com/fin7-attacks-restaurant-industry"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.flashpoint-intel.com/blog/fin7-revisited-inside-astra-panel-and-sqlrat-malware/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://blog.morphisec.com/fin7-attack-modifications-revealed"
+        },
+        {
+          "source_name": "url",
+          "url": "https://blog.morphisec.com/fin7-not-finished-morphisec-spots-new-campaign"
+        },
+        {
+          "source_name": "url",
+          "url": "https://securelist.com/fin7-5-the-infamous-cybercrime-rig-fin7-continues-its-activities/90703/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
+        },
+        {
+          "source_name": "url",
+          "url": "https://attack.mitre.org/groups/G0046/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://go.crowdstrike.com/rs/281-OBQ-266/images/Report2020CrowdStrikeGlobalThreatReport.pdf"
+        },
+        {
+          "source_name": "url",
+          "url": "https://threatintel.blog/OPBlueRaven-Part1/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://threatintel.blog/OPBlueRaven-Part2/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.secureworks.com/research/threat-profiles/gold-niagara"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.computerweekly.com/news/252525240/ALPHV-BlackCat-ransomware-family-becoming-more-dangerous"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.deepinstinct.com/blog/understanding-the-windows-javascript-threat-landscape"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.microsoft.com/en-us/security/blog/2023/12/28/financially-motivated-threat-actors-misusing-app-installer/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.wired.com/story/fin7-carbanak-hacking-group-behind-a-string-of-big-breaches/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/updated-cyber-threat-actor-naming-system/"
+        }
+      ],
+      "x_misp_attribution_confidence": [
+        "50"
+      ],
+      "x_misp_cfr_type_of_incident": [
+        "Financial Theft"
+      ],
+      "x_misp_country": [
+        "RU"
+      ],
+      "x_misp_motive": [
+        "Cybercrime"
+      ],
+      "x_misp_name_attribution": [
+        "FIN7:da5cdcd1-7b15-4371-b7eb-ca32916d2052",
+        "CARBON SPIDER:f9eb432f-2293-48b7-bca4-cc78beb50df0",
+        "Carbanak:cae79680-67a6-4411-903c-f824dbcc813f",
+        "Sangria Tempest:d0c33595-b684-45ef-91c3-e2f5ce1a8191",
+        "Carbon Spider:f9eb432f-2293-48b7-bca4-cc78beb50df0",
+        "GOLD NIAGARA:a7119872-bc6b-494b-9f7a-8c50faaf53a9",
+        "G0046:a1ad5090-2487-46d2-8237-6151a2dd5063",
+        "G0008:a1ad5090-2487-46d2-8237-6151a2dd5063",
+        "WILD COMET:598308b3-5475-48c6-9a2c-676fe1d2c6fb"
+      ],
+      "x_misp_origin_fin7": [
+        "Mandiant"
+      ],
+      "x_misp_origin_gold_niagara": [
+        "Secureworks"
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--15d28b14-e261-45f0-86b6-72374445111f",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-09T07:35:06.000Z",
+      "modified": "2026-10-09T07:35:06.000Z",
+      "first_observed": "2026-03-02T08:41:00Z",
+      "last_observed": "2026-10-09T07:35:06Z",
+      "number_observed": 1,
+      "object_refs": [
+        "file--15d28b14-e261-45f0-86b6-72374445111f"
+      ],
+      "labels": [
+        "misp:name=\"file\"",
+        "misp:meta-category=\"file\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:information-credibility=\"1\"",
+        "admiralty-scale:source-reliability=\"a\""
+      ]
+    },
+    {
+      "type": "file",
+      "spec_version": "2.1",
+      "id": "file--15d28b14-e261-45f0-86b6-72374445111f",
+      "hashes": {
+        "MD5": "91678506a5474354f1ceb4c12c3c56dd",
+        "SHA-1": "ca91f74f2438d710e130a5a413b2c75219c9d5a9",
+        "SHA-256": "cdf03e90d85977619f7881a13f59a275812dbf0e4ae29874493728b0ef78ebc9"
+      },
+      "size": 421376,
+      "name": "svchost_update.exe"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--15d28b14-e261-45f0-86b6-72374445111f",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-09T07:35:06.000Z",
+      "modified": "2026-10-09T07:35:06.000Z",
+      "description": "BIN-02 - Source : SOC Helios, fiche d'analyse et CSV n°4 à 6 - Collecté le 2026-10-06",
+      "pattern": "[file:hashes.MD5 = '91678506a5474354f1ceb4c12c3c56dd' AND file:hashes.'SHA-1' = 'ca91f74f2438d710e130a5a413b2c75219c9d5a9' AND file:hashes.'SHA-256' = 'cdf03e90d85977619f7881a13f59a275812dbf0e4ae29874493728b0ef78ebc9' AND file:name = 'svchost_update.exe']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-09T07:35:06Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "file"
+        }
+      ],
+      "labels": [
+        "misp:name=\"file\"",
+        "misp:meta-category=\"file\"",
+        "admiralty-scale:source-reliability=\"a\"",
+        "admiralty-scale:information-credibility=\"1\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--00504c87-b03f-4ef3-88d1-4c699f2df7c4",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-08T13:10:07.000Z",
+      "modified": "2026-10-08T13:10:07.000Z",
+      "first_observed": "2026-03-05T14:05:00Z",
+      "last_observed": "2026-10-08T13:10:07Z",
+      "number_observed": 1,
+      "object_refs": [
+        "file--00504c87-b03f-4ef3-88d1-4c699f2df7c4"
+      ],
+      "labels": [
+        "misp:name=\"file\"",
+        "misp:meta-category=\"file\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:information-credibility=\"1\"",
+        "admiralty-scale:source-reliability=\"a\""
+      ]
+    },
+    {
+      "type": "file",
+      "spec_version": "2.1",
+      "id": "file--00504c87-b03f-4ef3-88d1-4c699f2df7c4",
+      "hashes": {
+        "MD5": "3435016f3f2aacce36b71abb636cfc64",
+        "SHA-1": "d1a4a3501bd1b1d9bc32ade2b4add3cb135e36b8",
+        "SHA-256": "f4109cd2860816d568c5581edf8ed5df28d35471fa8ff849e9ee2451b69135f0"
+      },
+      "size": 210944,
+      "name": "rundll32_helper.dll"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--00504c87-b03f-4ef3-88d1-4c699f2df7c4",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-08T13:10:07.000Z",
+      "modified": "2026-10-08T13:10:07.000Z",
+      "description": "BIN-03 - Source : SOC Helios, fiche d'analyse et CSV n°7 à 9 - Collecté le 2026-10-06",
+      "pattern": "[file:hashes.MD5 = '3435016f3f2aacce36b71abb636cfc64' AND file:hashes.'SHA-1' = 'd1a4a3501bd1b1d9bc32ade2b4add3cb135e36b8' AND file:hashes.'SHA-256' = 'f4109cd2860816d568c5581edf8ed5df28d35471fa8ff849e9ee2451b69135f0' AND file:name = 'rundll32_helper.dll']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-08T13:10:07Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "file"
+        }
+      ],
+      "labels": [
+        "misp:name=\"file\"",
+        "misp:meta-category=\"file\"",
+        "admiralty-scale:source-reliability=\"a\"",
+        "admiralty-scale:information-credibility=\"1\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--77017a65-3a93-41b3-b832-9bf33dfe5fcb",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T09:38:25.000Z",
+      "modified": "2026-10-07T09:38:25.000Z",
+      "first_observed": "2026-03-02T08:41:00Z",
+      "last_observed": "2026-10-07T09:38:25Z",
+      "number_observed": 1,
+      "object_refs": [
+        "ipv4-addr--b7990467-7d31-435d-95d8-664f6e38d1f8",
+        "domain-name--1c4eefe1-eb1e-4b78-83c1-9d4f5040098a"
+      ],
+      "labels": [
+        "misp:name=\"domain-ip\"",
+        "misp:meta-category=\"network\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--b7990467-7d31-435d-95d8-664f6e38d1f8",
+      "value": "198.51.100.23"
+    },
+    {
+      "type": "domain-name",
+      "spec_version": "2.1",
+      "id": "domain-name--1c4eefe1-eb1e-4b78-83c1-9d4f5040098a",
+      "value": "cdn-svc-update.test",
+      "resolves_to_refs": [
+        "ipv4-addr--b7990467-7d31-435d-95d8-664f6e38d1f8"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--77017a65-3a93-41b3-b832-9bf33dfe5fcb",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-07T09:38:25.000Z",
+      "modified": "2026-10-07T09:38:25.000Z",
+      "description": "Téléchargement de BIN-02 - CSV n°13 et 19 - Collecté le 2026-10-06",
+      "pattern": "[domain-name:value = 'cdn-svc-update.test' AND domain-name:resolves_to_refs[*].value = '198.51.100.23']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-07T09:38:25Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "network"
+        }
+      ],
+      "labels": [
+        "misp:name=\"domain-ip\"",
+        "misp:meta-category=\"network\"",
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--0ef8cb11-14ae-46b4-98b6-0a7010f2880e",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-09T08:00:33.000Z",
+      "modified": "2026-10-09T08:00:33.000Z",
+      "first_observed": "2026-03-02T09:15:00Z",
+      "last_observed": "2026-10-09T08:00:33Z",
+      "number_observed": 1,
+      "object_refs": [
+        "ipv4-addr--66f5c05d-7431-43fa-9034-f62ff88ec731",
+        "domain-name--f48c05ff-5ba5-4dff-8489-1788c1513e4c"
+      ],
+      "labels": [
+        "misp:name=\"domain-ip\"",
+        "misp:meta-category=\"network\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"b\""
+      ]
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--66f5c05d-7431-43fa-9034-f62ff88ec731",
+      "value": "198.51.100.24"
+    },
+    {
+      "type": "domain-name",
+      "spec_version": "2.1",
+      "id": "domain-name--f48c05ff-5ba5-4dff-8489-1788c1513e4c",
+      "value": "api-telemetry-eu.test",
+      "resolves_to_refs": [
+        "ipv4-addr--66f5c05d-7431-43fa-9034-f62ff88ec731"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--0ef8cb11-14ae-46b4-98b6-0a7010f2880e",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-09T08:00:33.000Z",
+      "modified": "2026-10-09T08:00:33.000Z",
+      "description": "C2 de BIN-02 - CSV n°14 et 20 - Collecté le 2026-10-06",
+      "pattern": "[domain-name:value = 'api-telemetry-eu.test' AND domain-name:resolves_to_refs[*].value = '198.51.100.24']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-09T08:00:33Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "network"
+        }
+      ],
+      "labels": [
+        "misp:name=\"domain-ip\"",
+        "misp:meta-category=\"network\"",
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ]
+    },
+    {
+      "type": "observed-data",
+      "spec_version": "2.1",
+      "id": "observed-data--9d962fa7-c9a5-4b1c-968a-121966503734",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-08T13:11:32.000Z",
+      "modified": "2026-10-08T13:11:32.000Z",
+      "first_observed": "2026-03-02T07:58:00Z",
+      "last_observed": "2026-10-08T13:11:32Z",
+      "number_observed": 1,
+      "object_refs": [
+        "ipv4-addr--61f82c8e-acbf-4e16-a194-ac2689cfe26c",
+        "domain-name--ec0d19ad-b720-4d30-952a-5fd842e76b2a"
+      ],
+      "labels": [
+        "misp:name=\"domain-ip\"",
+        "misp:meta-category=\"network\"",
+        "admiralty-scale:information-credibility=\"2\"",
+        "admiralty-scale:source-reliability=\"c\""
+      ]
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--61f82c8e-acbf-4e16-a194-ac2689cfe26c",
+      "value": "198.51.100.40"
+    },
+    {
+      "type": "domain-name",
+      "spec_version": "2.1",
+      "id": "domain-name--ec0d19ad-b720-4d30-952a-5fd842e76b2a",
+      "value": "mail-secure-login.test",
+      "resolves_to_refs": [
+        "ipv4-addr--61f82c8e-acbf-4e16-a194-ac2689cfe26c"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--9d962fa7-c9a5-4b1c-968a-121966503734",
+      "created_by_ref": "identity--edab5e05-94bc-4754-9ffc-a60a6a58edb4",
+      "created": "2026-10-08T13:11:32.000Z",
+      "modified": "2026-10-08T13:11:32.000Z",
+      "description": "Page d'hameçonnage liée au courriel initial - CSV n°15 et 23 - Collecté le 2026-10-06",
+      "pattern": "[domain-name:value = 'mail-secure-login.test' AND domain-name:resolves_to_refs[*].value = '198.51.100.40']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "valid_from": "2026-10-08T13:11:32Z",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "misp-category",
+          "phase_name": "network"
+        }
+      ],
+      "labels": [
+        "misp:name=\"domain-ip\"",
+        "misp:meta-category=\"network\"",
+        "admiralty-scale:source-reliability=\"c\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--970a3432-3237-47ad-bcca-7d8cbb217736",
+      "created": "2026-10-09T08:00:33.000Z",
+      "modified": "2026-10-09T08:00:33.000Z",
+      "name": "PowerShell",
+      "description": "Adversaries may abuse PowerShell commands and scripts for execution. PowerShell is a powerful interactive command-line interface and scripting environment included in the Windows operating system.(Citation: TechNet PowerShell) Adversaries can use PowerShell to perform a number of actions, including discovery of information and execution of code. Examples include the <code>Start-Process</code> cmdlet which can be used to run an executable and the <code>Invoke-Command</code> cmdlet which runs a command locally or on a remote computer (though administrator permissions are required to use PowerShell to connect to remote systems).\n\nPowerShell may also be used to download and run executables from the Internet, which can be executed from disk or in memory without touching disk.\n\nA number of PowerShell-based offensive testing tools are available, including [Empire](https://attack.mitre.org/software/S0363),  [PowerSploit](https://attack.mitre.org/software/S0194), [PoshC2](https://attack.mitre.org/software/S0378), and PSAttack.(Citation: Github PSAttack)\n\nPowerShell commands/scripts can also be executed without directly invoking the <code>powershell.exe</code> binary through interfaces to PowerShell's underlying <code>System.Management.Automation</code> assembly DLL exposed through the .NET framework and Windows Common Language Interface (CLI).(Citation: Sixdub PowerPick Jan 2016)(Citation: SilentBreak Offensive PS Dec 2015)(Citation: Microsoft PSfromCsharp APR 2014)",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "attack-Windows",
+          "phase_name": "execution"
+        }
+      ],
+      "labels": [
+        "misp:galaxy-name=\"MITRE ATT&CK Techniques\"",
+        "misp:galaxy-type=\"mitre-attack-pattern\"",
+        "misp-galaxy:mitre-attack-pattern=\"PowerShell - T1059.001\""
+      ],
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1059.001"
+        },
+        {
+          "source_name": "url",
+          "url": "http://www.malwarearchaeology.com/s/Windows-PowerShell-Logging-Cheat-Sheet-ver-June-2016-v2.pdf"
+        },
+        {
+          "source_name": "url",
+          "url": "https://attack.mitre.org/techniques/T1059/001"
+        },
+        {
+          "source_name": "url",
+          "url": "https://blogs.msdn.microsoft.com/kebab/2014/04/28/executing-powershell-scripts-from-c/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://github.com/Exploit-install/PSAttack-1"
+        },
+        {
+          "source_name": "url",
+          "url": "https://powershellmagazine.com/2014/07/16/investigating-powershell-attacks/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx"
+        },
+        {
+          "source_name": "url",
+          "url": "https://web.archive.org/web/20160327101330/http://www.sixdub.net/?p=367"
+        },
+        {
+          "source_name": "url",
+          "url": "https://web.archive.org/web/20190508170150/https://silentbreaksecurity.com/powershell-jobs-without-powershell-exe/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.fireeye.com/blog/threat-research/2016/02/greater_visibilityt.html"
+        }
+      ],
+      "x_misp_mitre_data_sources": [
+        "Command: Command Execution",
+        "Module: Module Load",
+        "Process: Process Creation",
+        "Process: Process Metadata",
+        "Script: Script Execution"
+      ],
+      "x_misp_mitre_platforms": [
+        "Windows"
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+      "created": "2026-10-09T08:00:33.000Z",
+      "modified": "2026-10-09T08:00:33.000Z",
+      "name": "Spearphishing Attachment",
+      "description": "Adversaries may send spearphishing emails with a malicious attachment in an attempt to gain access to victim systems. Spearphishing attachment is a specific variant of spearphishing. Spearphishing attachment is different from other forms of spearphishing in that it employs the use of malware attached to an email. All forms of spearphishing are electronically delivered social engineering targeted at a specific individual, company, or industry. In this scenario, adversaries attach a file to the spearphishing email and usually rely upon [User Execution](https://attack.mitre.org/techniques/T1204) to gain execution.(Citation: Unit 42 DarkHydrus July 2018) Spearphishing may also involve social engineering techniques, such as posing as a trusted source.\n\nThere are many options for the attachment such as Microsoft Office documents, executables, PDFs, or archived files. Upon opening the attachment (and potentially clicking past protections), the adversary's payload exploits a vulnerability or directly executes on the user's system. The text of the spearphishing email usually tries to give a plausible reason why the file should be opened, and may explain how to bypass system protections in order to do so. The email may also contain instructions on how to decrypt an attachment, such as a zip file password, in order to evade email boundary defenses. Adversaries frequently manipulate file extensions and icons in order to make attached executables appear to be document files, or files exploiting one application appear to be a file for a different one. ",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "attack-Linux",
+          "phase_name": "initial-access"
+        },
+        {
+          "kill_chain_name": "attack-macOS",
+          "phase_name": "initial-access"
+        },
+        {
+          "kill_chain_name": "attack-Windows",
+          "phase_name": "initial-access"
+        }
+      ],
+      "labels": [
+        "misp:galaxy-name=\"MITRE ATT&CK Techniques\"",
+        "misp:galaxy-type=\"mitre-attack-pattern\"",
+        "misp-galaxy:mitre-attack-pattern=\"Spearphishing Attachment - T1566.001\""
+      ],
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1566.001"
+        },
+        {
+          "source_name": "url",
+          "url": "https://attack.mitre.org/techniques/T1566/001"
+        },
+        {
+          "source_name": "url",
+          "url": "https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spoofing-protection?view=o365-worldwide"
+        },
+        {
+          "source_name": "url",
+          "url": "https://researchcenter.paloaltonetworks.com/2018/07/unit42-new-threat-actor-group-darkhydrus-targets-middle-east-government/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://web.archive.org/web/20210708014107/https://www.cyber.gov.au/sites/default/files/2019-03/spoof_email_sender_policy_framework.pdf"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.elastic.co/security-labs/embracing-offensive-tooling-building-detections-against-koadic-using-eql"
+        }
+      ],
+      "x_misp_mitre_data_sources": [
+        "Application Log: Application Log Content",
+        "File: File Creation",
+        "Network Traffic: Network Traffic Content",
+        "Network Traffic: Network Traffic Flow"
+      ],
+      "x_misp_mitre_platforms": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--b8902400-e6c5-4ba2-95aa-2d35b442b118",
+      "created": "2026-10-09T08:00:33.000Z",
+      "modified": "2026-10-09T08:00:33.000Z",
+      "name": "Encrypted Channel",
+      "description": "Adversaries may employ an encryption algorithm to conceal command and control traffic rather than relying on any inherent protections provided by a communication protocol. Despite the use of a secure algorithm, these implementations may be vulnerable to reverse engineering if secret keys are encoded and/or generated within malware samples/configuration files.",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "attack-ESXi",
+          "phase_name": "command-and-control"
+        },
+        {
+          "kill_chain_name": "attack-Linux",
+          "phase_name": "command-and-control"
+        },
+        {
+          "kill_chain_name": "attack-macOS",
+          "phase_name": "command-and-control"
+        },
+        {
+          "kill_chain_name": "attack-Network-Devices",
+          "phase_name": "command-and-control"
+        },
+        {
+          "kill_chain_name": "attack-Windows",
+          "phase_name": "command-and-control"
+        }
+      ],
+      "labels": [
+        "misp:galaxy-name=\"MITRE ATT&CK Techniques\"",
+        "misp:galaxy-type=\"mitre-attack-pattern\"",
+        "misp-galaxy:mitre-attack-pattern=\"Encrypted Channel - T1573\""
+      ],
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1573"
+        },
+        {
+          "source_name": "url",
+          "url": "http://www.sans.org/reading-room/whitepapers/analyst/finding-hidden-threats-decrypting-ssl-34840"
+        },
+        {
+          "source_name": "url",
+          "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+        },
+        {
+          "source_name": "url",
+          "url": "https://attack.mitre.org/techniques/T1573"
+        },
+        {
+          "source_name": "url",
+          "url": "https://insights.sei.cmu.edu/cert/2015/03/the-risks-of-ssl-inspection.html"
+        }
+      ],
+      "x_misp_mitre_data_sources": [
+        "Network Traffic: Network Traffic Content"
+      ],
+      "x_misp_mitre_platforms": [
+        "ESXi",
+        "Linux",
+        "macOS",
+        "Network Devices",
+        "Windows"
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add",
+      "created": "2026-10-09T08:00:33.000Z",
+      "modified": "2026-10-09T08:00:33.000Z",
+      "name": "Ingress Tool Transfer",
+      "description": "Adversaries may transfer tools or other files from an external system into a compromised environment. Tools or files may be copied from an external adversary-controlled system to the victim network through the command and control channel or through alternate protocols such as [ftp](https://attack.mitre.org/software/S0095). Once present, adversaries may also transfer/spread tools between victim devices within a compromised environment (i.e. [Lateral Tool Transfer](https://attack.mitre.org/techniques/T1570)). \n\nOn Windows, adversaries may use various utilities to download tools, such as `copy`, `finger`, [certutil](https://attack.mitre.org/software/S0160), and [PowerShell](https://attack.mitre.org/techniques/T1059/001) commands such as <code>IEX(New-Object Net.WebClient).downloadString()</code> and <code>Invoke-WebRequest</code>. On Linux and macOS systems, a variety of utilities also exist, such as `curl`, `scp`, `sftp`, `tftp`, `rsync`, `finger`, and `wget`.(Citation: t1105_lolbas)  A number of these tools, such as `wget`, `curl`, and `scp`, also exist on ESXi. After downloading a file, a threat actor may attempt to verify its integrity by checking its hash value (e.g., via `certutil -hashfile`).(Citation: Google Cloud Threat Intelligence COSCMICENERGY 2023)\n\nAdversaries may also abuse installers and package managers, such as `yum` or `winget`, to download tools to victim hosts. Adversaries have also abused file application features, such as the Windows `search-ms` protocol handler, to deliver malicious files to victims through remote file searches invoked by [User Execution](https://attack.mitre.org/techniques/T1204) (typically after interacting with [Phishing](https://attack.mitre.org/techniques/T1566) lures).(Citation: T1105: Trellix_search-ms)\n\nFiles can also be transferred using various [Web Service](https://attack.mitre.org/techniques/T1102)s as well as native or otherwise present tools on the victim system.(Citation: PTSecurity Cobalt Dec 2016) In some cases, adversaries may be able to leverage services that sync between a web-based and an on-premises client, such as Dropbox or OneDrive, to transfer files onto victim systems. For example, by compromising a cloud account and logging into the service's web portal, an adversary may be able to trigger an automatic syncing process that transfers the file onto the victim's machine.(Citation: Dropbox Malware Sync)",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "attack-ESXi",
+          "phase_name": "command-and-control"
+        },
+        {
+          "kill_chain_name": "attack-Linux",
+          "phase_name": "command-and-control"
+        },
+        {
+          "kill_chain_name": "attack-macOS",
+          "phase_name": "command-and-control"
+        },
+        {
+          "kill_chain_name": "attack-Network-Devices",
+          "phase_name": "command-and-control"
+        },
+        {
+          "kill_chain_name": "attack-Windows",
+          "phase_name": "command-and-control"
+        }
+      ],
+      "labels": [
+        "misp:galaxy-name=\"MITRE ATT&CK Techniques\"",
+        "misp:galaxy-type=\"mitre-attack-pattern\"",
+        "misp-galaxy:mitre-attack-pattern=\"Ingress Tool Transfer - T1105\""
+      ],
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1105"
+        },
+        {
+          "source_name": "url",
+          "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+        },
+        {
+          "source_name": "url",
+          "url": "https://attack.mitre.org/techniques/T1105"
+        },
+        {
+          "source_name": "url",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/cosmicenergy-ot-malware-russian-response/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://lolbas-project.github.io/#t1105"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-Snatch-eng.pdf"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.technologyreview.com/2013/08/21/83143/dropbox-and-similar-services-can-sync-malware/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.trellix.com/blogs/research/beyond-file-search-a-novel-method/"
+        }
+      ],
+      "x_misp_mitre_data_sources": [
+        "Command: Command Execution",
+        "File: File Creation",
+        "Network Traffic: Network Connection Creation",
+        "Network Traffic: Network Traffic Content",
+        "Network Traffic: Network Traffic Flow"
+      ],
+      "x_misp_mitre_platforms": [
+        "ESXi",
+        "Linux",
+        "macOS",
+        "Network Devices",
+        "Windows"
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+      "created": "2026-10-09T08:00:33.000Z",
+      "modified": "2026-10-09T08:00:33.000Z",
+      "name": "Malicious File",
+      "description": "An adversary may rely upon a user opening a malicious file in order to gain execution. Users may be subjected to social engineering to get them to open a file that will lead to code execution. This user action will typically be observed as follow-on behavior from [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001). Adversaries may use several types of files that require a user to execute them, including .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, .cpl, .reg, and .iso.(Citation: Mandiant Trojanized Windows 10)\n\nAdversaries may employ various forms of [Masquerading](https://attack.mitre.org/techniques/T1036) and [Obfuscated Files or Information](https://attack.mitre.org/techniques/T1027) to increase the likelihood that a user will open and successfully execute a malicious file. These methods may include using a familiar naming convention and/or password protecting the file and supplying instructions to a user on how to open it.(Citation: Password Protected Word Docs) \n\nWhile [Malicious File](https://attack.mitre.org/techniques/T1204/002) frequently occurs shortly after Initial Access it may occur at other phases of an intrusion, such as when an adversary places a file in a shared directory or on a user's desktop hoping that a user will click on it. This activity may also be seen shortly after [Internal Spearphishing](https://attack.mitre.org/techniques/T1534).",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "attack-Linux",
+          "phase_name": "execution"
+        },
+        {
+          "kill_chain_name": "attack-macOS",
+          "phase_name": "execution"
+        },
+        {
+          "kill_chain_name": "attack-Windows",
+          "phase_name": "execution"
+        }
+      ],
+      "labels": [
+        "misp:galaxy-name=\"MITRE ATT&CK Techniques\"",
+        "misp:galaxy-type=\"mitre-attack-pattern\"",
+        "misp-galaxy:mitre-attack-pattern=\"Malicious File - T1204.002\""
+      ],
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1204.002"
+        },
+        {
+          "source_name": "url",
+          "url": "https://attack.mitre.org/techniques/T1204/002"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.bleepingcomputer.com/news/security/psa-dont-open-spam-containing-password-protected-word-docs/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.mandiant.com/resources/blog/trojanized-windows-installers-ukrainian-government"
+        }
+      ],
+      "x_misp_mitre_data_sources": [
+        "File: File Creation",
+        "Process: Process Creation"
+      ],
+      "x_misp_mitre_platforms": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--9efb1ea7-c37b-4595-9640-b7680cd84279",
+      "created": "2026-10-09T08:00:33.000Z",
+      "modified": "2026-10-09T08:00:33.000Z",
+      "name": "Registry Run Keys / Startup Folder",
+      "description": "Adversaries may achieve persistence by adding a program to a startup folder or referencing it with a Registry run key. Adding an entry to the \"run keys\" in the Registry or startup folder will cause the program referenced to be executed when a user logs in.(Citation: Microsoft Run Key) These programs will be executed under the context of the user and will have the account's associated permissions level.\n\nThe following run keys are created by default on Windows systems:\n\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce</code>\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Run</code>\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce</code>\n\nRun keys may exist under multiple hives.(Citation: Microsoft Wow6432Node 2018)(Citation: Malwarebytes Wow6432Node 2016) The <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx</code> is also available but is not created by default on Windows Vista and newer. Registry run key entries can reference programs directly or list them as a dependency.(Citation: Microsoft Run Key) For example, it is possible to load a DLL at logon using a \"Depend\" key with RunOnceEx: <code>reg add HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx\\0001\\Depend /v 1 /d \"C:\\temp\\evil[.]dll\"</code> (Citation: Oddvar Moe RunOnceEx Mar 2018)\n\nPlacing a program within a startup folder will also cause that program to execute when a user logs in. There is a startup folder location for individual user accounts as well as a system-wide startup folder that will be checked regardless of which user account logs in. The startup folder path for the current user is <code>C:\\Users\\\\[Username]\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup</code>. The startup folder path for all users is <code>C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\StartUp</code>.\n\nThe following Registry keys can be used to set startup folder items for persistence:\n\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders</code>\n* <code>HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders</code>\n* <code>HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders</code>\n\nThe following Registry keys can control automatic startup of services during boot:\n\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce</code>\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunServices</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunServices</code>\n\nUsing policy settings to specify startup programs creates corresponding values in either of two Registry keys:\n\n* <code>HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run</code>\n* <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run</code>\n\nPrograms listed in the load value of the registry key <code>HKEY_CURRENT_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows</code> run automatically for the currently logged-on user.\n\nBy default, the multistring <code>BootExecute</code> value of the registry key <code>HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Session Manager</code> is set to <code>autocheck autochk *</code>. This value causes Windows, at startup, to check the file-system integrity of the hard disks if the system has been shut down abnormally. Adversaries can add other programs or processes to this registry value which will automatically launch at boot.\n\nAdversaries can use these configuration locations to execute malware, such as remote access tools, to maintain persistence through system reboots. Adversaries may also use [Masquerading](https://attack.mitre.org/techniques/T1036) to make the Registry entries look as if they are associated with legitimate programs.",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "attack-Windows",
+          "phase_name": "persistence"
+        },
+        {
+          "kill_chain_name": "attack-Windows",
+          "phase_name": "privilege-escalation"
+        }
+      ],
+      "labels": [
+        "misp:galaxy-name=\"MITRE ATT&CK Techniques\"",
+        "misp:galaxy-type=\"mitre-attack-pattern\"",
+        "misp-galaxy:mitre-attack-pattern=\"Registry Run Keys / Startup Folder - T1547.001\""
+      ],
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1547.001"
+        },
+        {
+          "source_name": "url",
+          "url": "https://attack.mitre.org/techniques/T1547/001"
+        },
+        {
+          "source_name": "url",
+          "url": "https://blog.malwarebytes.com/cybercrime/2013/10/hiding-in-plain-sight/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://docs.microsoft.com/en-us/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry"
+        },
+        {
+          "source_name": "url",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/setupapi/run-and-runonce-registry-keys"
+        },
+        {
+          "source_name": "url",
+          "url": "https://oddvar.moe/2018/03/21/persistence-using-runonceex-hidden-from-autoruns-exe/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://technet.microsoft.com/en-us/sysinternals/bb963902"
+        }
+      ],
+      "x_misp_mitre_data_sources": [
+        "Command: Command Execution",
+        "File: File Modification",
+        "Process: Process Creation",
+        "Windows Registry: Windows Registry Key Creation",
+        "Windows Registry: Windows Registry Key Modification"
+      ],
+      "x_misp_mitre_platforms": [
+        "Windows"
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--005a06c6-14bf-4118-afa0-ebcd8aebb0c9",
+      "created": "2026-10-09T08:00:33.000Z",
+      "modified": "2026-10-09T08:00:33.000Z",
+      "name": "Scheduled Task",
+      "description": "Adversaries may abuse the Windows Task Scheduler to perform task scheduling for initial or recurring execution of malicious code. There are multiple ways to access the Task Scheduler in Windows. The [schtasks](https://attack.mitre.org/software/S0111) utility can be run directly on the command line, or the Task Scheduler can be opened through the GUI within the Administrator Tools section of the Control Panel.(Citation: Stack Overflow) In some cases, adversaries have used a .NET wrapper for the Windows Task Scheduler, and alternatively, adversaries have used the Windows netapi32 library and [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) (WMI) to create a scheduled task. Adversaries may also utilize the Powershell Cmdlet `Invoke-CimMethod`, which leverages WMI class `PS_ScheduledTask` to create a scheduled task via an XML path.(Citation: Red Canary - Atomic Red Team)\n\nAn adversary may use Windows Task Scheduler to execute programs at system startup or on a scheduled basis for persistence. The Windows Task Scheduler can also be abused to conduct remote Execution as part of Lateral Movement and/or to run a process under the context of a specified account (such as SYSTEM). Similar to [System Binary Proxy Execution](https://attack.mitre.org/techniques/T1218), adversaries have also abused the Windows Task Scheduler to potentially mask one-time execution under signed/trusted system processes.(Citation: ProofPoint Serpent)\n\nAdversaries may also create \"hidden\" scheduled tasks (i.e. [Hide Artifacts](https://attack.mitre.org/techniques/T1564)) that may not be visible to defender tools and manual queries used to enumerate tasks. Specifically, an adversary may hide a task from `schtasks /query` and the Task Scheduler by deleting the associated Security Descriptor (SD) registry value (where deletion of this value must be completed using SYSTEM permissions).(Citation: SigmaHQ)(Citation: Tarrask scheduled task) Adversaries may also employ alternate methods to hide tasks, such as altering the metadata (e.g., `Index` value) within associated registry keys.(Citation: Defending Against Scheduled Task Attacks in Windows Environments) ",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "attack-Windows",
+          "phase_name": "execution"
+        },
+        {
+          "kill_chain_name": "attack-Windows",
+          "phase_name": "persistence"
+        },
+        {
+          "kill_chain_name": "attack-Windows",
+          "phase_name": "privilege-escalation"
+        }
+      ],
+      "labels": [
+        "misp:galaxy-name=\"MITRE ATT&CK Techniques\"",
+        "misp:galaxy-type=\"mitre-attack-pattern\"",
+        "misp-galaxy:mitre-attack-pattern=\"Scheduled Task - T1053.005\""
+      ],
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1053.005"
+        },
+        {
+          "source_name": "url",
+          "url": "https://attack.mitre.org/techniques/T1053/005"
+        },
+        {
+          "source_name": "url",
+          "url": "https://blog.qualys.com/vulnerabilities-threat-research/2022/06/20/defending-against-scheduled-task-attacks-in-windows-environments"
+        },
+        {
+          "source_name": "url",
+          "url": "https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-other-object-access-events"
+        },
+        {
+          "source_name": "url",
+          "url": "https://github.com/SigmaHQ/sigma/blob/master/rules/windows/registry/registry_delete/registry_delete_schtasks_hide_task_via_sd_value_removal.yml"
+        },
+        {
+          "source_name": "url",
+          "url": "https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1053.005/T1053.005.md"
+        },
+        {
+          "source_name": "url",
+          "url": "https://social.technet.microsoft.com/Forums/en-US/e5bca729-52e7-4fcb-ba12-3225c564674c/scheduled-tasks-history-retention-settings?forum=winserver8gen"
+        },
+        {
+          "source_name": "url",
+          "url": "https://stackoverflow.com/questions/2913816/how-to-find-the-location-of-the-scheduled-tasks-folder"
+        },
+        {
+          "source_name": "url",
+          "url": "https://technet.microsoft.com/en-us/sysinternals/bb963902"
+        },
+        {
+          "source_name": "url",
+          "url": "https://technet.microsoft.com/library/dd315590.aspx"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.microsoft.com/security/blog/2022/04/12/tarrask-malware-uses-scheduled-tasks-for-defense-evasion/"
+        },
+        {
+          "source_name": "url",
+          "url": "https://www.proofpoint.com/us/blog/threat-insight/serpent-no-swiping-new-backdoor-targets-french-entities-unique-attack-chain"
+        },
+        {
+          "source_name": "url",
+          "url": "https://x.com/leoloobeek/status/939248813465853953"
+        }
+      ],
+      "x_misp_mitre_data_sources": [
+        "Command: Command Execution",
+        "File: File Creation",
+        "File: File Modification",
+        "Network Traffic: Network Traffic Flow",
+        "Process: Process Creation",
+        "Scheduled Job: Scheduled Job Creation",
+        "Windows Registry: Windows Registry Key Creation"
+      ],
+      "x_misp_mitre_platforms": [
+        "Windows"
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--df8b2a25-8bdf-4856-953c-a04372b1c161",
+      "created": "2026-10-09T08:00:33.000Z",
+      "modified": "2026-10-09T08:00:33.000Z",
+      "name": "Web Protocols",
+      "description": "Adversaries may communicate using application layer protocols associated with web traffic to avoid detection/network filtering by blending in with existing traffic. Commands to the remote system, and often the results of those commands, will be embedded within the protocol traffic between the client and server. \n\nProtocols such as HTTP/S(Citation: CrowdStrike Putter Panda) and WebSocket(Citation: Brazking-Websockets) that carry web traffic may be very common in environments. HTTP/S packets have many fields and headers in which data can be concealed. An adversary may abuse these protocols to communicate with systems under their control within a victim network while also mimicking normal, expected traffic. ",
+      "kill_chain_phases": [
+        {
+          "kill_chain_name": "attack-ESXi",
+          "phase_name": "command-and-control"
+        },
+        {
+          "kill_chain_name": "attack-Linux",
+          "phase_name": "command-and-control"
+        },
+        {
+          "kill_chain_name": "attack-macOS",
+          "phase_name": "command-and-control"
+        },
+        {
+          "kill_chain_name": "attack-Network-Devices",
+          "phase_name": "command-and-control"
+        },
+        {
+          "kill_chain_name": "attack-Windows",
+          "phase_name": "command-and-control"
+        }
+      ],
+      "labels": [
+        "misp:galaxy-name=\"MITRE ATT&CK Techniques\"",
+        "misp:galaxy-type=\"mitre-attack-pattern\"",
+        "misp-galaxy:mitre-attack-pattern=\"Web Protocols - T1071.001\""
+      ],
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.001"
+        },
+        {
+          "source_name": "url",
+          "url": "http://cdn0.vox-cdn.com/assets/4589853/crowdstrike-intelligence-report-putter-panda.original.pdf"
+        },
+        {
+          "source_name": "url",
+          "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+        },
+        {
+          "source_name": "url",
+          "url": "https://attack.mitre.org/techniques/T1071/001"
+        },
+        {
+          "source_name": "url",
+          "url": "https://securityintelligence.com/posts/brazking-android-malware-upgraded-targeting-brazilian-banks/"
+        }
+      ],
+      "x_misp_mitre_data_sources": [
+        "Network Traffic: Network Traffic Content",
+        "Network Traffic: Network Traffic Flow"
+      ],
+      "x_misp_mitre_platforms": [
+        "ESXi",
+        "Linux",
+        "macOS",
+        "Network Devices",
+        "Windows"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--e7febde7-3deb-501f-8074-954a534e4235",
+      "created": "2026-10-07T09:40:45.000Z",
+      "modified": "2026-10-07T09:40:45.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--4f51dc52-f672-45f8-a6a7-44197a2a6cd3",
+      "target_ref": "observed-data--4f51dc52-f672-45f8-a6a7-44197a2a6cd3"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ed2d981b-ac9a-5a8b-95f4-11f76cc1cb30",
+      "created": "2026-10-07T09:41:01.000Z",
+      "modified": "2026-10-07T09:41:01.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--5b45ecce-7861-4c13-b734-b7eea3141397",
+      "target_ref": "observed-data--5b45ecce-7861-4c13-b734-b7eea3141397"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b81bcb3b-96d9-5eac-8d45-e1bb92ff61d9",
+      "created": "2026-10-07T09:41:19.000Z",
+      "modified": "2026-10-07T09:41:19.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--41ce6549-5f80-4d1f-9d3d-3c0a31457eb6",
+      "target_ref": "observed-data--41ce6549-5f80-4d1f-9d3d-3c0a31457eb6"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--620bad51-adb8-51d3-a10a-60a8b409ef8b",
+      "created": "2026-10-07T09:41:36.000Z",
+      "modified": "2026-10-07T09:41:36.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--33670665-f34b-47ab-9edf-8a840022e861",
+      "target_ref": "observed-data--33670665-f34b-47ab-9edf-8a840022e861"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d116ca86-3921-5ac3-8eb7-25bb2687ba85",
+      "created": "2026-10-09T07:51:48.000Z",
+      "modified": "2026-10-09T07:51:48.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--4c9fd6ba-0952-497e-8c4e-29e153e60c58",
+      "target_ref": "observed-data--4c9fd6ba-0952-497e-8c4e-29e153e60c58"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f3c2727e-6dcd-5853-9bd4-8c089f87647b",
+      "created": "2026-10-09T07:52:46.000Z",
+      "modified": "2026-10-09T07:52:46.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--59277f83-03e5-49ee-bfbe-a9ef192e6cc8",
+      "target_ref": "observed-data--59277f83-03e5-49ee-bfbe-a9ef192e6cc8"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c49ab3d2-603c-51c2-82e4-8b2c681ba390",
+      "created": "2026-10-09T07:53:28.000Z",
+      "modified": "2026-10-09T07:53:28.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--2b1fe87a-e19f-4d52-96c4-ebeae5585072",
+      "target_ref": "observed-data--2b1fe87a-e19f-4d52-96c4-ebeae5585072"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f7581ada-4caa-5a05-90ce-3ab988a99ff7",
+      "created": "2026-10-09T07:54:07.000Z",
+      "modified": "2026-10-09T07:54:07.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--9d527803-15cb-46c6-8abb-b071e6ab8328",
+      "target_ref": "observed-data--9d527803-15cb-46c6-8abb-b071e6ab8328"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d851665c-43b6-5eba-89f6-be79f1259a3d",
+      "created": "2026-10-07T10:54:56.000Z",
+      "modified": "2026-10-07T10:54:56.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--34a5d0bb-250e-460a-a32f-7aadb0522149",
+      "target_ref": "observed-data--34a5d0bb-250e-460a-a32f-7aadb0522149"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ff091679-e700-5567-aeb4-26013dd9d3f2",
+      "created": "2026-10-07T10:54:20.000Z",
+      "modified": "2026-10-07T10:54:20.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--6afcf22e-fb67-4349-88ac-3e1730b77f83",
+      "target_ref": "observed-data--6afcf22e-fb67-4349-88ac-3e1730b77f83"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--aa68e625-02db-5ff2-929b-229877459250",
+      "created": "2026-10-07T11:10:30.000Z",
+      "modified": "2026-10-07T11:10:30.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--641d5910-763f-45ae-800b-b38df143990e",
+      "target_ref": "observed-data--641d5910-763f-45ae-800b-b38df143990e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--dfcf6eb7-0508-53e8-9371-27cd693ccaff",
+      "created": "2026-10-07T12:43:03.000Z",
+      "modified": "2026-10-07T12:43:03.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--794ef2fc-79bd-4518-9634-f1439dbb28fc",
+      "target_ref": "observed-data--794ef2fc-79bd-4518-9634-f1439dbb28fc"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--34c91f25-f35b-570e-86d6-7996b82f9821",
+      "created": "2026-10-07T12:42:44.000Z",
+      "modified": "2026-10-07T12:42:44.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--acd04950-c324-4a74-831c-9a32d8cead14",
+      "target_ref": "observed-data--acd04950-c324-4a74-831c-9a32d8cead14"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0a8bb0c1-fae3-5341-8422-e9532400f84d",
+      "created": "2026-10-07T12:51:52.000Z",
+      "modified": "2026-10-07T12:51:52.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--18f4080f-eef5-4830-88e2-a74e3a1c8a30",
+      "target_ref": "observed-data--18f4080f-eef5-4830-88e2-a74e3a1c8a30"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--9d3b1f2e-dc76-5a12-9ce7-7d5960db3f92",
+      "created": "2026-10-07T12:52:13.000Z",
+      "modified": "2026-10-07T12:52:13.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--709e2373-a33e-481d-8e93-230acb3587e1",
+      "target_ref": "observed-data--709e2373-a33e-481d-8e93-230acb3587e1"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a419d359-67e9-5e79-b5c1-6382ba0cd178",
+      "created": "2026-10-07T12:52:52.000Z",
+      "modified": "2026-10-07T12:52:52.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--1e30b824-1950-4357-bfef-6d13c9dfd90c",
+      "target_ref": "observed-data--1e30b824-1950-4357-bfef-6d13c9dfd90c"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--783f7977-d713-5827-b86a-75bb0ab09aca",
+      "created": "2026-10-07T13:00:45.000Z",
+      "modified": "2026-10-07T13:00:45.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--ba5227e5-566e-4dbf-851b-9f933ec3197f",
+      "target_ref": "observed-data--ba5227e5-566e-4dbf-851b-9f933ec3197f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3d7d9350-e7e2-4437-8ce0-181b2f822b57",
+      "created": "2026-10-08T12:46:58.000Z",
+      "modified": "2026-10-08T12:46:58.000Z",
+      "relationship_type": "drops",
+      "source_ref": "observed-data--1f603d83-d3c9-4631-90d4-430b5ccd2e4e",
+      "target_ref": "observed-data--15d28b14-e261-45f0-86b6-72374445111f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c6d3bed6-b127-4a07-a7a3-4c50ab68a39a",
+      "created": "2026-10-08T12:49:00.000Z",
+      "modified": "2026-10-08T12:49:00.000Z",
+      "relationship_type": "executes",
+      "source_ref": "observed-data--1f603d83-d3c9-4631-90d4-430b5ccd2e4e",
+      "target_ref": "observed-data--4c9fd6ba-0952-497e-8c4e-29e153e60c58"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--df1e4b24-7202-4265-9ebe-14f49415785d",
+      "created": "2026-10-08T12:51:34.000Z",
+      "modified": "2026-10-08T12:51:34.000Z",
+      "relationship_type": "creates",
+      "source_ref": "observed-data--1f603d83-d3c9-4631-90d4-430b5ccd2e4e",
+      "target_ref": "observed-data--34a5d0bb-250e-460a-a32f-7aadb0522149"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--9ea546cb-f92a-4847-ab56-f5fa2c7ad63c",
+      "created": "2026-10-08T12:53:47.000Z",
+      "modified": "2026-10-08T12:53:47.000Z",
+      "relationship_type": "targets",
+      "source_ref": "observed-data--1f603d83-d3c9-4631-90d4-430b5ccd2e4e",
+      "target_ref": "x-misp-attribute--b0cffbb9-601b-4c63-9a2f-9593e572fe00"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--bb94b6d4-7600-5009-9c0e-6c648e57e3cc",
+      "created": "2026-10-08T12:53:47.000Z",
+      "modified": "2026-10-08T12:53:47.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--1f603d83-d3c9-4631-90d4-430b5ccd2e4e",
+      "target_ref": "observed-data--1f603d83-d3c9-4631-90d4-430b5ccd2e4e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4f66fd79-d10e-5b3b-9b3d-5379f18267ae",
+      "created": "2026-10-09T07:35:06.000Z",
+      "modified": "2026-10-09T07:35:06.000Z",
+      "relationship_type": "related-to",
+      "source_ref": "observed-data--15d28b14-e261-45f0-86b6-72374445111f",
+      "target_ref": "threat-actor--00220228-a5a4-4032-a30d-826bb55aa3fb"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--90e9caf7-767e-4163-ac33-a9935f51e500",
+      "created": "2026-10-08T12:56:43.000Z",
+      "modified": "2026-10-08T12:56:43.000Z",
+      "relationship_type": "downloaded-from",
+      "source_ref": "observed-data--15d28b14-e261-45f0-86b6-72374445111f",
+      "target_ref": "observed-data--77017a65-3a93-41b3-b832-9bf33dfe5fcb"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--64c531c0-2ad1-45d1-9b04-41dea1acb694",
+      "created": "2026-10-08T12:58:51.000Z",
+      "modified": "2026-10-08T12:58:51.000Z",
+      "relationship_type": "communicates-with",
+      "source_ref": "observed-data--15d28b14-e261-45f0-86b6-72374445111f",
+      "target_ref": "observed-data--0ef8cb11-14ae-46b4-98b6-0a7010f2880e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--65966597-76f9-4b5d-af65-101efcd9eeca",
+      "created": "2026-10-08T12:59:47.000Z",
+      "modified": "2026-10-08T12:59:47.000Z",
+      "relationship_type": "communicates-with",
+      "source_ref": "observed-data--15d28b14-e261-45f0-86b6-72374445111f",
+      "target_ref": "observed-data--4f51dc52-f672-45f8-a6a7-44197a2a6cd3"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--bc6b4048-090d-4510-afb0-eed5a9c7bdf6",
+      "created": "2026-10-08T13:02:54.000Z",
+      "modified": "2026-10-08T13:02:54.000Z",
+      "relationship_type": "creates",
+      "source_ref": "observed-data--15d28b14-e261-45f0-86b6-72374445111f",
+      "target_ref": "x-misp-attribute--5953927c-06d6-4fae-a309-814e49b8b3c4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f74db597-50e3-4417-b8fe-edfe280f2d4e",
+      "created": "2026-10-08T13:04:03.000Z",
+      "modified": "2026-10-08T13:04:03.000Z",
+      "relationship_type": "drops",
+      "source_ref": "observed-data--15d28b14-e261-45f0-86b6-72374445111f",
+      "target_ref": "observed-data--59277f83-03e5-49ee-bfbe-a9ef192e6cc8"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--49b08e5d-b43d-4bcb-bbb4-8b11bda4ce07",
+      "created": "2026-10-08T13:04:47.000Z",
+      "modified": "2026-10-08T13:04:47.000Z",
+      "relationship_type": "uses",
+      "source_ref": "observed-data--15d28b14-e261-45f0-86b6-72374445111f",
+      "target_ref": "observed-data--9d527803-15cb-46c6-8abb-b071e6ab8328"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d3dadf94-4938-5ba0-8000-f398398ced6c",
+      "created": "2026-10-09T07:35:06.000Z",
+      "modified": "2026-10-09T07:35:06.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--15d28b14-e261-45f0-86b6-72374445111f",
+      "target_ref": "observed-data--15d28b14-e261-45f0-86b6-72374445111f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--db401551-749f-4a40-8daf-76df88e60d99",
+      "created": "2026-10-08T13:07:51.000Z",
+      "modified": "2026-10-08T13:07:51.000Z",
+      "relationship_type": "creates",
+      "source_ref": "observed-data--00504c87-b03f-4ef3-88d1-4c699f2df7c4",
+      "target_ref": "observed-data--6afcf22e-fb67-4349-88ac-3e1730b77f83"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--be91faf5-49fd-4261-9f16-e603afa6a075",
+      "created": "2026-10-08T13:08:49.000Z",
+      "modified": "2026-10-08T13:08:49.000Z",
+      "relationship_type": "creates",
+      "source_ref": "observed-data--00504c87-b03f-4ef3-88d1-4c699f2df7c4",
+      "target_ref": "observed-data--2b1fe87a-e19f-4d52-96c4-ebeae5585072"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3028af09-64c1-4cff-8040-b36b5dd71299",
+      "created": "2026-10-08T13:10:07.000Z",
+      "modified": "2026-10-08T13:10:07.000Z",
+      "relationship_type": "exfiltrates-to",
+      "source_ref": "observed-data--00504c87-b03f-4ef3-88d1-4c699f2df7c4",
+      "target_ref": "observed-data--5b45ecce-7861-4c13-b734-b7eea3141397"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4c76d97b-30b1-5f78-a785-9858fc5a4400",
+      "created": "2026-10-08T13:10:07.000Z",
+      "modified": "2026-10-08T13:10:07.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--00504c87-b03f-4ef3-88d1-4c699f2df7c4",
+      "target_ref": "observed-data--00504c87-b03f-4ef3-88d1-4c699f2df7c4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a8cf2d3a-bbda-5366-8ff4-c94ca6030c61",
+      "created": "2026-10-07T09:38:25.000Z",
+      "modified": "2026-10-07T09:38:25.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--77017a65-3a93-41b3-b832-9bf33dfe5fcb",
+      "target_ref": "observed-data--77017a65-3a93-41b3-b832-9bf33dfe5fcb"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--e4a9b607-1265-52f6-b645-e7927a5fec12",
+      "created": "2026-10-09T08:00:33.000Z",
+      "modified": "2026-10-09T08:00:33.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--0ef8cb11-14ae-46b4-98b6-0a7010f2880e",
+      "target_ref": "observed-data--0ef8cb11-14ae-46b4-98b6-0a7010f2880e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--6066a45f-0366-4f3a-b508-9ceb25ef0b4b",
+      "created": "2026-10-08T13:11:32.000Z",
+      "modified": "2026-10-08T13:11:32.000Z",
+      "relationship_type": "hosts",
+      "source_ref": "observed-data--9d962fa7-c9a5-4b1c-968a-121966503734",
+      "target_ref": "observed-data--641d5910-763f-45ae-800b-b38df143990e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3b154ac8-7f13-5f29-81c8-9b14d1e3cd42",
+      "created": "2026-10-08T13:11:32.000Z",
+      "modified": "2026-10-08T13:11:32.000Z",
+      "relationship_type": "based-on",
+      "source_ref": "indicator--9d962fa7-c9a5-4b1c-968a-121966503734",
+      "target_ref": "observed-data--9d962fa7-c9a5-4b1c-968a-121966503734"
+    },
+    {
+      "type": "marking-definition",
+      "spec_version": "2.1",
+      "id": "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
+      "created": "2017-01-20T00:00:00.000Z",
+      "definition_type": "tlp",
+      "name": "TLP:AMBER",
+      "definition": {
+        "tlp": "amber"
+      }
+    }
+  ]
+}

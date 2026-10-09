@@ -1,0 +1,39 @@
+title: Accès en lecture à la mémoire de LSASS par un processus non attendu
+id: e57600d1-46a4-430a-91c6-2f6165c1b576
+status: experimental
+description: |
+    Détecte l'ouverture du processus lsass.exe avec des droits de lecture mémoire par un programme situé hors
+    des répertoires système. Comportement de BIN-03 (rundll32_helper.dll) sur dc-01.
+    Nécessite Sysmon (événement 10) ou un EDR équivalent.
+references:
+    - Dossier d'artefacts SOC Helios Energy, INC-2026-0302 - alerte SIEM 5, fiche BIN-03
+author: Cellule CTI - projet Helios Energy
+date: 2026-10-09
+tags:
+    - attack.credential-access
+    - attack.t1003.001
+    - tlp.amber
+logsource:
+    category: process_access
+    product: windows
+detection:
+    selection:
+        TargetImage|endswith: '\lsass.exe'
+        GrantedAccess:
+            - '0x1010'
+            - '0x1410'
+            - '0x1438'
+            - '0x143a'
+            - '0x1fffff'
+    filter_system_paths:
+        SourceImage|startswith:
+            - 'C:\Windows\System32\'
+            - 'C:\Windows\SysWOW64\'
+            - 'C:\Program Files\Windows Defender\'
+            - 'C:\ProgramData\Microsoft\Windows Defender\'
+    filter_rundll32:
+        SourceImage|endswith: '\rundll32.exe'
+    condition: selection and (not filter_system_paths or filter_rundll32)
+falsepositives:
+    - Antivirus, EDR et outils de supervision installés hors des répertoires système (à exclure par chemin signé)
+level: critical

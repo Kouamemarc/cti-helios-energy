@@ -1,0 +1,30 @@
+title: Connexion sortante vers une adresse de commande ou d'exfiltration de la campagne
+id: 3d46a641-ac74-43c2-a0bc-86382ea6d7a3
+status: experimental
+description: |
+    Détecte une connexion sortante vers les serveurs de commande de BIN-02 ou vers l'adresse d'exfiltration
+    (2,3 Go sortants en clair vers 203.0.113.28 port 8080 depuis dc-01).
+    Limité aux indicateurs cotés B2. Les adresses cotées C3 à D4 ne sont pas incluses.
+references:
+    - Dossier d'artefacts SOC Helios Energy, INC-2026-0302 - alertes SIEM 2, 4 et 10, indicateurs n°19, 20, 21, 24
+author: Cellule CTI - projet Helios Energy
+date: 2026-10-09
+tags:
+    - attack.command-and-control
+    - attack.t1071.001
+    - attack.exfiltration
+    - attack.t1048.003
+    - tlp.amber
+logsource:
+    category: firewall
+detection:
+    selection:
+        dst_ip:
+            - '198.51.100.23'
+            - '198.51.100.24'
+            - '203.0.113.14'
+            - '203.0.113.28'
+    condition: selection
+falsepositives:
+    - Aucun attendu
+level: critical

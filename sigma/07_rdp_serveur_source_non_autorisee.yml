@@ -1,0 +1,36 @@
+title: Ouverture de session RDP sur un serveur depuis une source non autorisée
+id: 6e03b365-1d9e-4613-bffa-313ae004ed88
+status: experimental
+description: |
+    Détecte une ouverture de session RDP (type 10) dont l'adresse source n'appartient pas au réseau d'administration.
+    Alerte 7 : session RDP à 01:47 sur srv-fichiers-02 depuis une source interne inhabituelle.
+    A DEPLOYER SUR LES SERVEURS UNIQUEMENT. La plage 10.20.99.0/24 est un exemple : la remplacer par le
+    réseau des postes d'administration ou du bastion. Sigma ne sait pas filtrer sur l'heure : la notion
+    « hors horaires » se règle dans la planification de la règle côté SIEM.
+references:
+    - Dossier d'artefacts SOC Helios Energy, INC-2026-0302 - alerte SIEM 7, indicateur n°26
+author: Cellule CTI - projet Helios Energy
+date: 2026-10-09
+tags:
+    - attack.lateral-movement
+    - attack.t1021.001
+    - tlp.amber
+logsource:
+    product: windows
+    service: security
+detection:
+    selection:
+        EventID: 4624
+        LogonType: 10
+    filter_admin_network:
+        IpAddress|cidr: '10.20.99.0/24'
+    filter_local:
+        IpAddress:
+            - '127.0.0.1'
+            - '::1'
+            - '-'
+    condition: selection and not 1 of filter_*
+falsepositives:
+    - Administrateurs se connectant hors du réseau d'administration (pratique à faire cesser)
+    - Serveurs de rebond non recensés
+level: medium
